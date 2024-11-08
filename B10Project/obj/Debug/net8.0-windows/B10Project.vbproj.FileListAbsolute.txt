@@ -1,0 +1,17 @@
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.exe
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.deps.json
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.runtimeconfig.json
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.dll
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.pdb
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.Form1.resources
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.vbproj.GenerateResource.cache
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.AssemblyInfoInputs.cache
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.AssemblyInfo.vb
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.vbproj.CoreCompileInputs.cache
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.sourcelink.json
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.dll
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\refint\B10Project.dll
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.pdb
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.genruntimeconfig.cache
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\ref\B10Project.dll
