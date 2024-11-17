@@ -24,6 +24,8 @@ Partial Class AddLocationForm
     Private Sub InitializeComponent()
         Label1 = New Label()
         BackBtn = New Button()
+        SearchTextBoxPlaceholder = New TextBox()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -38,17 +40,37 @@ Partial Class AddLocationForm
         ' 
         ' BackBtn
         ' 
-        BackBtn.Location = New Point(853, 22)
+        BackBtn.Location = New Point(807, 16)
         BackBtn.Name = "BackBtn"
-        BackBtn.Size = New Size(75, 23)
+        BackBtn.Size = New Size(109, 27)
         BackBtn.TabIndex = 1
         BackBtn.Text = "Back"
         BackBtn.UseVisualStyleBackColor = True
+        ' 
+        ' SearchTextBoxPlaceholder
+        ' 
+        SearchTextBoxPlaceholder.Location = New Point(287, 20)
+        SearchTextBoxPlaceholder.Name = "SearchTextBoxPlaceholder"
+        SearchTextBoxPlaceholder.Size = New Size(312, 23)
+        SearchTextBoxPlaceholder.TabIndex = 2
+        SearchTextBoxPlaceholder.Text = "Search"
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.ForeColor = Color.Gray
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(632, 21)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(137, 23)
+        ComboBox1.TabIndex = 4
+        ComboBox1.Text = "Filter"
         ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(ComboBox1)
+        Controls.Add(SearchTextBoxPlaceholder)
         Controls.Add(BackBtn)
         Controls.Add(Label1)
         Name = "AddLocationForm"
@@ -59,5 +81,7 @@ Partial Class AddLocationForm
 
     Friend WithEvents Label1 As Label
     Friend WithEvents BackBtn As Button
+    Friend WithEvents SearchTextBoxPlaceholder As TextBox
+    Friend WithEvents ComboBox1 As ComboBox
 
 End Class
