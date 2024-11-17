@@ -25,7 +25,7 @@ Partial Class AddLocationForm
         Label1 = New Label()
         BackBtn = New Button()
         SearchTextBoxPlaceholder = New TextBox()
-        ComboBox1 = New ComboBox()
+        DropDownMenu1 = New DropDownMenu()
         SuspendLayout()
         ' 
         ' Label1
@@ -55,21 +55,18 @@ Partial Class AddLocationForm
         SearchTextBoxPlaceholder.TabIndex = 2
         SearchTextBoxPlaceholder.Text = "Search"
         ' 
-        ' ComboBox1
+        ' DropDownMenu1
         ' 
-        ComboBox1.ForeColor = Color.Gray
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(632, 21)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(137, 23)
-        ComboBox1.TabIndex = 4
-        ComboBox1.Text = "Filter"
+        DropDownMenu1.Location = New Point(643, 20)
+        DropDownMenu1.Name = "DropDownMenu1"
+        DropDownMenu1.Size = New Size(158, 259)
+        DropDownMenu1.TabIndex = 6
         ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(ComboBox1)
+        Controls.Add(DropDownMenu1)
         Controls.Add(SearchTextBoxPlaceholder)
         Controls.Add(BackBtn)
         Controls.Add(Label1)
@@ -82,6 +79,6 @@ Partial Class AddLocationForm
     Friend WithEvents Label1 As Label
     Friend WithEvents BackBtn As Button
     Friend WithEvents SearchTextBoxPlaceholder As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents DropDownMenu1 As DropDownMenu
 
 End Class

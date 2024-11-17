@@ -4,7 +4,10 @@ C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windo
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.dll
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\bin\Debug\net8.0-windows\B10Project.pdb
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.AddLocationForm.resources
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.DropDownMenu.resources
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.Form1.resources
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.MainControl.resources
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.SearchBar.resources
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.vbproj.GenerateResource.cache
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.AssemblyInfoInputs.cache
@@ -16,5 +19,3 @@ C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windo
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.pdb
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.genruntimeconfig.cache
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\ref\B10Project.dll
-C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.Form1.resources
-C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.SearchBar.resources

@@ -4,6 +4,9 @@
     <Compile Update="AddLocationForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="DropDownMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
