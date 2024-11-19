@@ -26,6 +26,8 @@ Partial Class AddLocationForm
         BackBtn = New Button()
         SearchTextBoxPlaceholder = New TextBox()
         FilterMenu = New DropDownMenu()
+        LocationPanels = New Panel()
+        Label2 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -63,16 +65,35 @@ Partial Class AddLocationForm
         FilterMenu.Size = New Size(123, 30)
         FilterMenu.TabIndex = 6
         ' 
+        ' LocationPanels
+        ' 
+        LocationPanels.AutoScroll = True
+        LocationPanels.Location = New Point(12, 95)
+        LocationPanels.Name = "LocationPanels"
+        LocationPanels.Size = New Size(899, 479)
+        LocationPanels.TabIndex = 7
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(-15, 50)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(957, 15)
+        Label2.TabIndex = 1
+        Label2.Text = "______________________________________________________________________________________________________________________________________________________________________________________________"
+        ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(FilterMenu)
+        Controls.Add(LocationPanels)
         Controls.Add(SearchTextBoxPlaceholder)
         Controls.Add(BackBtn)
         Controls.Add(Label1)
+        Controls.Add(Label2)
         Name = "AddLocationForm"
-        Size = New Size(931, 518)
+        Size = New Size(933, 590)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -81,5 +102,7 @@ Partial Class AddLocationForm
     Friend WithEvents BackBtn As Button
     Friend WithEvents SearchTextBoxPlaceholder As TextBox
     Friend WithEvents FilterMenu As DropDownMenu
+    Friend WithEvents LocationPanels As Panel
+    Friend WithEvents Label2 As Label
 
 End Class

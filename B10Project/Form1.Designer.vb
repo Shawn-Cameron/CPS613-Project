@@ -31,7 +31,7 @@ Partial Class Form1
         MainControl1.BackColor = SystemColors.Control
         MainControl1.Location = New Point(18, 6)
         MainControl1.Name = "MainControl1"
-        MainControl1.Size = New Size(933, 520)
+        MainControl1.Size = New Size(933, 590)
         MainControl1.TabIndex = 2
         ' 
         ' AddLocationForm1
@@ -45,7 +45,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(968, 533)
+        ClientSize = New Size(968, 608)
         Controls.Add(MainControl1)
         Controls.Add(AddLocationForm1)
         Name = "Form1"

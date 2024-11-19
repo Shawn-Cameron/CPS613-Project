@@ -20,3 +20,4 @@ C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windo
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.genruntimeconfig.cache
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\ref\B10Project.dll
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.Resources.resources
+C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net8.0-windows\B10Project.LocationContentCard.resources
