@@ -23,6 +23,7 @@
         AddToLocationPanel()
     End Sub
 
+    'Dyamically adds all content cards to the Add Location Panel
     Private Sub AddToLocationPanel()
         Dim items As List(Of Dictionary(Of String, String)) = GetContentCardsData()
 
@@ -36,6 +37,7 @@
         LocationPanels.AutoScrollMinSize = New Size(LocationPanels.Width, nextYCoor + 300)
     End Sub
 
+    'Updates the coordinates to support adding more cards 
     Private Sub SetNextCCLocation()
         nextXCoor += 220
         If nextXCoor >= 750 Then
@@ -51,7 +53,7 @@
         Dim items As New List(Of Dictionary(Of String, String)) From {
             New Dictionary(Of String, String) From {
                 {"file", "SquareOne.jpg"},
-                {"description", "This is Square One the places of the places with the places of the places"},
+                {"description", "This is Square One the places of the places with the places of the places with the places of the places "},
                 {"location", "Mississauga"},
                 {"year", "2015"},
                 {"ratings", "4.5"}
