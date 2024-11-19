@@ -7,6 +7,9 @@
     <Compile Update="DropDownMenu.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="LocationContentCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
