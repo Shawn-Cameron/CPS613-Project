@@ -25,7 +25,7 @@ Partial Class AddLocationForm
         Label1 = New Label()
         BackBtn = New Button()
         SearchTextBoxPlaceholder = New TextBox()
-        DropDownMenu1 = New DropDownMenu()
+        FilterMenu = New DropDownMenu()
         SuspendLayout()
         ' 
         ' Label1
@@ -40,9 +40,9 @@ Partial Class AddLocationForm
         ' 
         ' BackBtn
         ' 
-        BackBtn.Location = New Point(807, 16)
+        BackBtn.Location = New Point(804, 20)
         BackBtn.Name = "BackBtn"
-        BackBtn.Size = New Size(109, 27)
+        BackBtn.Size = New Size(107, 23)
         BackBtn.TabIndex = 1
         BackBtn.Text = "Back"
         BackBtn.UseVisualStyleBackColor = True
@@ -55,18 +55,19 @@ Partial Class AddLocationForm
         SearchTextBoxPlaceholder.TabIndex = 2
         SearchTextBoxPlaceholder.Text = "Search"
         ' 
-        ' DropDownMenu1
+        ' FilterMenu
         ' 
-        DropDownMenu1.Location = New Point(643, 20)
-        DropDownMenu1.Name = "DropDownMenu1"
-        DropDownMenu1.Size = New Size(158, 259)
-        DropDownMenu1.TabIndex = 6
+        FilterMenu.BackColor = SystemColors.Control
+        FilterMenu.Location = New Point(641, 17)
+        FilterMenu.Name = "FilterMenu"
+        FilterMenu.Size = New Size(123, 30)
+        FilterMenu.TabIndex = 6
         ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(DropDownMenu1)
+        Controls.Add(FilterMenu)
         Controls.Add(SearchTextBoxPlaceholder)
         Controls.Add(BackBtn)
         Controls.Add(Label1)
@@ -79,6 +80,6 @@ Partial Class AddLocationForm
     Friend WithEvents Label1 As Label
     Friend WithEvents BackBtn As Button
     Friend WithEvents SearchTextBoxPlaceholder As TextBox
-    Friend WithEvents DropDownMenu1 As DropDownMenu
+    Friend WithEvents FilterMenu As DropDownMenu
 
 End Class

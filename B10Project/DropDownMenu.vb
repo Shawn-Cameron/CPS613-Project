@@ -1,6 +1,6 @@
 ﻿Public Class DropDownMenu
-    Private filterBtnToggle As Boolean = False
-    Private continentsBtnToggle As Boolean = False
+    Public filterBtnToggle As Boolean = False
+    Public continentsBtnToggle As Boolean = False
 
     Private Sub DropDownMenu_Load(sender As Object, e As EventArgs) Handles Me.Load
         FilterOptionsUpdate()
@@ -17,7 +17,8 @@
         FilterOptionsUpdate()
     End Sub
 
-    Private Sub FilterOptionsUpdate()
+
+    Public Sub FilterOptionsUpdate()
         If filterBtnToggle Then
             Me.Size = New Size(123, 110)
             OptionsListBox.Visible = True
