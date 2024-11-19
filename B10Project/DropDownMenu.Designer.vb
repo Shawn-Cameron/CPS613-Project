@@ -33,32 +33,35 @@ Partial Class DropDownMenu
         OptionsListBox.BorderStyle = BorderStyle.None
         OptionsListBox.FormattingEnabled = True
         OptionsListBox.Items.AddRange(New Object() {"Future", "Past", "Most Popular"})
-        OptionsListBox.Location = New Point(3, 32)
+        OptionsListBox.Location = New Point(0, 27)
         OptionsListBox.Name = "OptionsListBox"
-        OptionsListBox.Size = New Size(120, 54)
+        OptionsListBox.Size = New Size(122, 54)
         OptionsListBox.TabIndex = 1
         OptionsListBox.Visible = False
         ' 
         ' filterBtn
         ' 
-        filterBtn.BackColor = SystemColors.Control
+        filterBtn.BackColor = SystemColors.Window
         filterBtn.FlatStyle = FlatStyle.Flat
-        filterBtn.Location = New Point(3, 3)
+        filterBtn.Location = New Point(0, 3)
         filterBtn.Name = "filterBtn"
         filterBtn.Size = New Size(122, 23)
         filterBtn.TabIndex = 2
-        filterBtn.Text = "Filter"
+        filterBtn.Text = "Filter                       >"
+        filterBtn.TextAlign = ContentAlignment.MiddleLeft
         filterBtn.UseVisualStyleBackColor = False
         ' 
         ' ContinentsBtn
         ' 
-        ContinentsBtn.BackColor = SystemColors.Control
+        ContinentsBtn.BackColor = SystemColors.Window
+        ContinentsBtn.FlatAppearance.BorderColor = Color.White
         ContinentsBtn.FlatStyle = FlatStyle.Flat
-        ContinentsBtn.Location = New Point(3, 92)
+        ContinentsBtn.Location = New Point(0, 81)
         ContinentsBtn.Name = "ContinentsBtn"
         ContinentsBtn.Size = New Size(122, 23)
         ContinentsBtn.TabIndex = 3
-        ContinentsBtn.Text = "Continents"
+        ContinentsBtn.Text = "Continents             >"
+        ContinentsBtn.TextAlign = ContentAlignment.MiddleLeft
         ContinentsBtn.UseVisualStyleBackColor = False
         ContinentsBtn.Visible = False
         ' 
@@ -67,7 +70,7 @@ Partial Class DropDownMenu
         ContinentsListBox.BorderStyle = BorderStyle.None
         ContinentsListBox.FormattingEnabled = True
         ContinentsListBox.Items.AddRange(New Object() {"North America", "South America", "Africa", "Asia", "Europe", "Australia/Oceania", "Antarctia"})
-        ContinentsListBox.Location = New Point(35, 121)
+        ContinentsListBox.Location = New Point(35, 104)
         ContinentsListBox.Name = "ContinentsListBox"
         ContinentsListBox.Size = New Size(120, 126)
         ContinentsListBox.TabIndex = 4
@@ -83,7 +86,7 @@ Partial Class DropDownMenu
         Controls.Add(filterBtn)
         Controls.Add(OptionsListBox)
         Name = "DropDownMenu"
-        Size = New Size(158, 251)
+        Size = New Size(156, 232)
         ResumeLayout(False)
     End Sub
     Friend WithEvents OptionsListBox As CheckedListBox
