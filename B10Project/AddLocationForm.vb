@@ -84,7 +84,7 @@
         If String.IsNullOrWhiteSpace(searchBar.Text) Then
             searchIsTrue = True
         Else
-            searchIsTrue = cardData("continent").StartsWith(searchBar.Text)
+            searchIsTrue = cardData("location").StartsWith(searchBar.Text)
         End If
 
         Return optionsIsTrue And continentsIsTrue And searchIsTrue
@@ -100,7 +100,7 @@
             New Dictionary(Of String, String) From {
                 {"file", "SquareOne.jpg"},
                 {"description", "This is Square One the places of the places with the places of the places with the places of the places "},
-                {"location", "North America"},
+                {"location", "water"},
                 {"year", "2015"},
                 {"ratings", "4.5"},
                 {"continent", "North America"}
