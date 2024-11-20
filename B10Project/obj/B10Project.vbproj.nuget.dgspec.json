@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\B10Project.vbproj": {}
+    "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\B10Project.vbproj": {
+    "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\B10Project.vbproj",
+        "projectUniqueName": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj",
         "projectName": "B10Project",
-        "projectPath": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\B10Project.vbproj",
-        "packagesPath": "C:\\Users\\samin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\obj\\",
+        "projectPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj",
+        "packagesPath": "C:\\Users\\shawn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shawn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

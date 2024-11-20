@@ -24,11 +24,9 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
-<<<<<<< HEAD
+
         LocPanel = New Panel()
-=======
-        TravelingArrow1 = New TravelingArrow()
->>>>>>> Pilot
+        'TravelingArrow1 = New TravelingArrow(2)
         TimeRemainingLabel = New Label()
         Label4 = New Label()
         NumPplLabel = New Label()
@@ -62,7 +60,6 @@ Partial Class MainControl
         TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
         ' 
-<<<<<<< HEAD
         ' LocPanel
         ' 
         LocPanel.AutoScroll = True
@@ -70,14 +67,14 @@ Partial Class MainControl
         LocPanel.Name = "LocPanel"
         LocPanel.Size = New Size(900, 303)
         LocPanel.TabIndex = 5
-=======
+
         ' TravelingArrow1
         ' 
-        TravelingArrow1.Location = New Point(3, 147)
-        TravelingArrow1.Name = "TravelingArrow1"
-        TravelingArrow1.Size = New Size(143, 83)
-        TravelingArrow1.TabIndex = 5
->>>>>>> Pilot
+        ' TravelingArrow1.Location = New Point(3, 147)
+        'TravelingArrow1.Name = "TravelingArrow1"
+        'TravelingArrow1.Size = New Size(143, 83)
+        'TravelingArrow1.TabIndex = 5
+
         ' 
         ' TimeRemainingLabel
         ' 
