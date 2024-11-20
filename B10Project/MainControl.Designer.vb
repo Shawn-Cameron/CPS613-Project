@@ -24,6 +24,7 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
+        LocPanel = New Panel()
         TimeRemainingLabel = New Label()
         Label4 = New Label()
         NumPplLabel = New Label()
@@ -32,7 +33,6 @@ Partial Class MainControl
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
-        TravelingArrow1 = New TravelingArrow()
         TripPanel.SuspendLayout()
         SuspendLayout()
         ' 
@@ -47,7 +47,7 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
-        TripPanel.Controls.Add(TravelingArrow1)
+        TripPanel.Controls.Add(LocPanel)
         TripPanel.Controls.Add(TimeRemainingLabel)
         TripPanel.Controls.Add(Label4)
         TripPanel.Controls.Add(NumPplLabel)
@@ -55,8 +55,16 @@ Partial Class MainControl
         TripPanel.Controls.Add(Label2)
         TripPanel.Location = New Point(13, 189)
         TripPanel.Name = "TripPanel"
-        TripPanel.Size = New Size(906, 297)
+        TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
+        ' 
+        ' LocPanel
+        ' 
+        LocPanel.AutoScroll = True
+        LocPanel.Location = New Point(3, 75)
+        LocPanel.Name = "LocPanel"
+        LocPanel.Size = New Size(900, 303)
+        LocPanel.TabIndex = 5
         ' 
         ' TimeRemainingLabel
         ' 
@@ -133,13 +141,6 @@ Partial Class MainControl
         AddLocBtn.Text = "Add Location"
         AddLocBtn.UseVisualStyleBackColor = True
         ' 
-        ' TravelingArrow1
-        ' 
-        TravelingArrow1.Location = New Point(3, 147)
-        TravelingArrow1.Name = "TravelingArrow1"
-        TravelingArrow1.Size = New Size(143, 83)
-        TravelingArrow1.TabIndex = 5
-        ' 
         ' MainControl
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -151,7 +152,7 @@ Partial Class MainControl
         Controls.Add(Label1)
         Controls.Add(AddLocBtn)
         Name = "MainControl"
-        Size = New Size(933, 520)
+        Size = New Size(933, 590)
         TripPanel.ResumeLayout(False)
         TripPanel.PerformLayout()
         ResumeLayout(False)
@@ -168,6 +169,6 @@ Partial Class MainControl
     Friend WithEvents NumPplLabel As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TimeRemainingLabel As Label
-    Friend WithEvents TravelingArrow1 As TravelingArrow
+    Friend WithEvents LocPanel As Panel
 
 End Class

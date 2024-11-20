@@ -22,95 +22,96 @@ Partial Class TourPlanningTripsIcon
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        PictureBox1 = New PictureBox()
-        TimeLabel = New Label()
-        Label2 = New Label()
+        NameLabel = New Label()
+        ImgBox = New PictureBox()
+        YearLabel = New Label()
+        LocLabel = New Label()
         Label3 = New Label()
-        Label4 = New Label()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        durationLabel = New Label()
+        CType(ImgBox, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label1
+        ' NameLabel
         ' 
-        Label1.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(15, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(115, 22)
-        Label1.TabIndex = 0
-        Label1.Text = "Name"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
+        NameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        NameLabel.Location = New Point(15, 0)
+        NameLabel.Name = "NameLabel"
+        NameLabel.Size = New Size(115, 22)
+        NameLabel.TabIndex = 0
+        NameLabel.Text = "Name"
+        NameLabel.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' PictureBox1
+        ' ImgBox
         ' 
-        PictureBox1.Location = New Point(15, 25)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(115, 101)
-        PictureBox1.TabIndex = 1
-        PictureBox1.TabStop = False
+        ImgBox.Location = New Point(15, 25)
+        ImgBox.Name = "ImgBox"
+        ImgBox.Size = New Size(115, 101)
+        ImgBox.TabIndex = 1
+        ImgBox.TabStop = False
         ' 
-        ' TimeLabel
+        ' YearLabel
         ' 
-        TimeLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TimeLabel.Location = New Point(21, 129)
-        TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(95, 23)
-        TimeLabel.TabIndex = 2
-        TimeLabel.Text = "Time"
-        TimeLabel.TextAlign = ContentAlignment.MiddleCenter
+        YearLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        YearLabel.Location = New Point(21, 129)
+        YearLabel.Name = "YearLabel"
+        YearLabel.Size = New Size(95, 23)
+        YearLabel.TabIndex = 2
+        YearLabel.Text = "Year"
+        YearLabel.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label2
+        ' LocLabel
         ' 
-        Label2.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(21, 152)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(95, 23)
-        Label2.TabIndex = 3
-        Label2.Text = "Location"
-        Label2.TextAlign = ContentAlignment.MiddleCenter
+        LocLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        LocLabel.Location = New Point(21, 152)
+        LocLabel.Name = "LocLabel"
+        LocLabel.Size = New Size(95, 23)
+        LocLabel.TabIndex = 3
+        LocLabel.Text = "Location"
+        LocLabel.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(21, 175)
+        Label3.Location = New Point(19, 175)
         Label3.Name = "Label3"
-        Label3.Size = New Size(59, 13)
+        Label3.Size = New Size(87, 13)
         Label3.TabIndex = 4
-        Label3.Text = "Duration: "
+        Label3.Text = "Duration (min): "
         ' 
-        ' Label4
+        ' durationLabel
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(86, 175)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(28, 13)
-        Label4.TabIndex = 5
-        Label4.Text = "1 Hr"
+        durationLabel.AutoSize = True
+        durationLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        durationLabel.Location = New Point(98, 175)
+        durationLabel.Name = "durationLabel"
+        durationLabel.Size = New Size(25, 13)
+        durationLabel.TabIndex = 5
+        durationLabel.Text = "120"
         ' 
         ' TourPlanningTripsIcon
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(Label4)
+        BorderStyle = BorderStyle.FixedSingle
+        Controls.Add(durationLabel)
         Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(TimeLabel)
-        Controls.Add(PictureBox1)
-        Controls.Add(Label1)
+        Controls.Add(LocLabel)
+        Controls.Add(YearLabel)
+        Controls.Add(ImgBox)
+        Controls.Add(NameLabel)
         Name = "TourPlanningTripsIcon"
-        Size = New Size(144, 203)
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Size = New Size(142, 201)
+        CType(ImgBox, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TimeLabel As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents NameLabel As Label
+    Friend WithEvents ImgBox As PictureBox
+    Friend WithEvents YearLabel As Label
+    Friend WithEvents LocLabel As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents durationLabel As Label
 
 End Class

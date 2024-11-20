@@ -30,16 +30,16 @@ Partial Class TravelingArrow
         ' 
         ' ImgBox
         ' 
-        ImgBox.Location = New Point(3, 18)
+        ImgBox.Location = New Point(6, 18)
         ImgBox.Name = "ImgBox"
-        ImgBox.Size = New Size(96, 24)
+        ImgBox.Size = New Size(65, 24)
         ImgBox.TabIndex = 0
         ImgBox.TabStop = False
         ' 
         ' TimeLabel
         ' 
         TimeLabel.AutoSize = True
-        TimeLabel.Location = New Point(24, 0)
+        TimeLabel.Location = New Point(16, 0)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(19, 15)
         TimeLabel.TabIndex = 1
@@ -48,7 +48,7 @@ Partial Class TravelingArrow
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(40, 0)
+        Label1.Location = New Point(32, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(28, 15)
         Label1.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class TravelingArrow
         Controls.Add(TimeLabel)
         Controls.Add(ImgBox)
         Name = "TravelingArrow"
-        Size = New Size(104, 49)
+        Size = New Size(76, 49)
         CType(ImgBox, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
