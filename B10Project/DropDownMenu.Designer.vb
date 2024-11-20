@@ -31,6 +31,7 @@ Partial Class DropDownMenu
         ' OptionsListBox
         ' 
         OptionsListBox.BorderStyle = BorderStyle.None
+        OptionsListBox.CheckOnClick = True
         OptionsListBox.FormattingEnabled = True
         OptionsListBox.Items.AddRange(New Object() {"Future", "Past", "Most Popular"})
         OptionsListBox.Location = New Point(0, 27)
@@ -68,6 +69,7 @@ Partial Class DropDownMenu
         ' ContinentsListBox
         ' 
         ContinentsListBox.BorderStyle = BorderStyle.None
+        ContinentsListBox.CheckOnClick = True
         ContinentsListBox.FormattingEnabled = True
         ContinentsListBox.Items.AddRange(New Object() {"North America", "South America", "Africa", "Asia", "Europe", "Australia/Oceania", "Antarctia"})
         ContinentsListBox.Location = New Point(35, 104)

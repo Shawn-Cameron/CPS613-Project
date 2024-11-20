@@ -27,6 +27,8 @@ Partial Class MainControl
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
+        Label2 = New Label()
+        TripPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
@@ -40,6 +42,7 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
+        TripPanel.Controls.Add(Label2)
         TripPanel.Location = New Point(13, 189)
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 297)
@@ -58,7 +61,7 @@ Partial Class MainControl
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(353, 35)
         Label1.Name = "Label1"
         Label1.Size = New Size(246, 50)
@@ -74,6 +77,16 @@ Partial Class MainControl
         AddLocBtn.Text = "Add Location"
         AddLocBtn.UseVisualStyleBackColor = True
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(13, 9)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(84, 17)
+        Label2.TabIndex = 0
+        Label2.Text = "Current Tour:"
+        ' 
         ' MainControl
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -86,6 +99,8 @@ Partial Class MainControl
         Controls.Add(AddLocBtn)
         Name = "MainControl"
         Size = New Size(933, 520)
+        TripPanel.ResumeLayout(False)
+        TripPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -95,5 +110,6 @@ Partial Class MainControl
     Friend WithEvents EditTripBtn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents AddLocBtn As Button
+    Friend WithEvents Label2 As Label
 
 End Class

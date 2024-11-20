@@ -1,11 +1,16 @@
-﻿Public Class DropDownMenu
+﻿Imports System.Security.Cryptography.X509Certificates
+
+Public Class DropDownMenu
     Public filterBtnToggle As Boolean = False
     Public continentsBtnToggle As Boolean = False
 
+    Public Event ComboBoxIndexChanged(sender As Object, e As EventArgs)
     Private Sub DropDownMenu_Load(sender As Object, e As EventArgs) Handles Me.Load
         FilterOptionsUpdate()
         Me.SetStyle(ControlStyles.SupportsTransparentBackColor, True)
         Me.BackColor = Color.Transparent
+
+
     End Sub
 
     Private Sub filterBtn_Click(sender As Object, e As EventArgs) Handles filterBtn.Click
@@ -51,12 +56,13 @@
 
     Public Function GetFilterOptions()
         Dim options As List(Of String) = New List(Of String)
-        For Each item As Object In OptionsListBox.SelectedItems
+        For Each item As Object In OptionsListBox.CheckedItems
             options.Add(item)
         Next
 
+
         Dim continents As List(Of String) = New List(Of String)
-        For Each item As Object In ContinentsListBox.SelectedItems
+        For Each item As Object In ContinentsListBox.CheckedItems
             continents.Add(item)
         Next
 
@@ -92,5 +98,11 @@
 
     Protected Overrides Sub OnPaintBackground(e As PaintEventArgs)
         ' Do nothing to create a transparent background
+    End Sub
+
+    Private Sub OptionsListBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles OptionsListBox.ItemCheck, ContinentsListBox.ItemCheck
+        Me.BeginInvoke(Sub()
+                           RaiseEvent ComboBoxIndexChanged(sender, e)
+                       End Sub)
     End Sub
 End Class
