@@ -24,9 +24,9 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
-
+        EditLabel = New Label()
         LocPanel = New Panel()
-        'TravelingArrow1 = New TravelingArrow(2)
+        EmptyLocLabel = New Label()
         TimeRemainingLabel = New Label()
         Label4 = New Label()
         NumPplLabel = New Label()
@@ -36,6 +36,7 @@ Partial Class MainControl
         Label1 = New Label()
         AddLocBtn = New Button()
         TripPanel.SuspendLayout()
+        LocPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
@@ -49,6 +50,7 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
+        TripPanel.Controls.Add(EditLabel)
         TripPanel.Controls.Add(LocPanel)
         TripPanel.Controls.Add(TimeRemainingLabel)
         TripPanel.Controls.Add(Label4)
@@ -60,39 +62,53 @@ Partial Class MainControl
         TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
         ' 
+        ' EditLabel
+        ' 
+        EditLabel.AutoSize = True
+        EditLabel.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        EditLabel.Location = New Point(415, 40)
+        EditLabel.Name = "EditLabel"
+        EditLabel.Size = New Size(77, 30)
+        EditLabel.TabIndex = 1
+        EditLabel.Text = "Editing"
+        EditLabel.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' LocPanel
         ' 
         LocPanel.AutoScroll = True
+        LocPanel.Controls.Add(EmptyLocLabel)
         LocPanel.Location = New Point(3, 75)
         LocPanel.Name = "LocPanel"
         LocPanel.Size = New Size(900, 303)
         LocPanel.TabIndex = 5
-
-        ' TravelingArrow1
         ' 
-        ' TravelingArrow1.Location = New Point(3, 147)
-        'TravelingArrow1.Name = "TravelingArrow1"
-        'TravelingArrow1.Size = New Size(143, 83)
-        'TravelingArrow1.TabIndex = 5
-
+        ' EmptyLocLabel
+        ' 
+        EmptyLocLabel.AutoSize = True
+        EmptyLocLabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        EmptyLocLabel.Location = New Point(240, 114)
+        EmptyLocLabel.Name = "EmptyLocLabel"
+        EmptyLocLabel.Size = New Size(421, 40)
+        EmptyLocLabel.TabIndex = 0
+        EmptyLocLabel.Text = "Please add locations to the tour"
         ' 
         ' TimeRemainingLabel
         ' 
         TimeRemainingLabel.AutoSize = True
-        TimeRemainingLabel.Location = New Point(860, 11)
+        TimeRemainingLabel.Location = New Point(858, 11)
         TimeRemainingLabel.Name = "TimeRemainingLabel"
-        TimeRemainingLabel.Size = New Size(29, 15)
-        TimeRemainingLabel.TabIndex = 4
-        TimeRemainingLabel.Text = "4 Hr"
+        TimeRemainingLabel.Size = New Size(25, 15)
+        TimeRemainingLabel.TabIndex = 6
+        TimeRemainingLabel.Text = "360"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(764, 11)
+        Label4.Location = New Point(731, 11)
         Label4.Name = "Label4"
-        Label4.Size = New Size(99, 15)
+        Label4.Size = New Size(132, 15)
         Label4.TabIndex = 3
-        Label4.Text = "Time Remaining: "
+        Label4.Text = "Time Remaining (Min): "
         ' 
         ' NumPplLabel
         ' 
@@ -165,6 +181,8 @@ Partial Class MainControl
         Size = New Size(933, 590)
         TripPanel.ResumeLayout(False)
         TripPanel.PerformLayout()
+        LocPanel.ResumeLayout(False)
+        LocPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -180,5 +198,7 @@ Partial Class MainControl
     Friend WithEvents Label4 As Label
     Friend WithEvents TimeRemainingLabel As Label
     Friend WithEvents LocPanel As Panel
+    Friend WithEvents EmptyLocLabel As Label
+    Friend WithEvents EditLabel As Label
 
 End Class

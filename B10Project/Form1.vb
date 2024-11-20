@@ -12,4 +12,8 @@
             AddLocationForm1.Visible = False
         End If
     End Sub
+
+    Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Pilot.Close()
+    End Sub
 End Class
