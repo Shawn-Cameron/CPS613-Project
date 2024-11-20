@@ -22,6 +22,7 @@
 
     End Sub
 
+<<<<<<< HEAD
     Private Sub PopulateLocations()
         Dim xCoor As Integer = 0
         Dim yCoor As Integer = 100
@@ -54,4 +55,14 @@
         End If
     End Sub
 
+=======
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Pilot.Button1.Enabled = True
+        Pilot.Label1.Text = "The trip has been confirmed"
+    End Sub
+
+    Private Sub MainControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Pilot.Show()
+    End Sub
+>>>>>>> Pilot
 End Class

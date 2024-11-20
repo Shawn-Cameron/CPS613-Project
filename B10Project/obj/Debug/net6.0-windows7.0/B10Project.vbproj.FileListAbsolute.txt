@@ -48,3 +48,6 @@ C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windo
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10Project.pdb
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10Project.genruntimeconfig.cache
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\ref\B10Project.dll
+C:\Users\samin\Documents\GitHub\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10Project.TourPlanningTripsIcon.resources
+C:\Users\samin\Documents\GitHub\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10Project.TravelingArrow.resources
+C:\Users\samin\Documents\GitHub\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10Project.Pilot.resources
