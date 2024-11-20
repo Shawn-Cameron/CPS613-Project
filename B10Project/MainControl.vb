@@ -40,7 +40,7 @@
 
 
             yCoor -= 130
-            xCoor += 1115
+            xCoor += 115
         Next
 
 

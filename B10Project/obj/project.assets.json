@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj",
-      "projectName": "B10Project",
-      "projectPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10Project.vbproj",
+      "projectUniqueName": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10.vbproj",
+      "projectName": "B10",
+      "projectPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\B10.vbproj",
       "packagesPath": "C:\\Users\\shawn\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\obj\\",
       "projectStyle": "PackageReference",
