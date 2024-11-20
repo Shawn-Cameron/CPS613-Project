@@ -1,7 +1,7 @@
 ﻿Public Class LocationContentCard
     Private origColor As Color = Me.BackColor
 
-    Public Sub New(fileName As String, descript As String, loc As String, year As String, rating As String)
+    Public Sub New(title As String, fileName As String, descript As String, loc As String, year As String, rating As String)
         InitializeComponent()
 
         Dim imgPath As String = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "Resources\", fileName)
@@ -9,6 +9,7 @@
         LocImage.Image = Image.FromFile(imgPath)
         LocImage.SizeMode = PictureBoxSizeMode.Zoom
 
+        TitleLabel.Text = title
         DesLabel.Text = descript
         LocLabel.Text = loc
         YearLabel.Text = year

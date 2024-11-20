@@ -37,7 +37,7 @@
 
         For Each item As Dictionary(Of String, String) In items
             If filterContentCards(item) Then
-                Dim ContentCard As LocationContentCard = New LocationContentCard(item("file"), item("description"), item("location"), item("year"), item("ratings"))
+                Dim ContentCard As LocationContentCard = New LocationContentCard(item("title"), item("file"), item("description"), item("location"), item("year"), item("ratings"))
                 LocationPanels.Controls.Add(ContentCard)
                 ContentCard.Location = New Point(nextXCoor, nextYCoor)
                 SetNextCCLocation()
@@ -84,7 +84,7 @@
         If String.IsNullOrWhiteSpace(searchBar.Text) Then
             searchIsTrue = True
         Else
-            searchIsTrue = cardData("location").StartsWith(searchBar.Text)
+            searchIsTrue = cardData("title").StartsWith(searchBar.Text)
         End If
 
         Return optionsIsTrue And continentsIsTrue And searchIsTrue
@@ -98,14 +98,16 @@
     Private Function GetContentCardsData()
         Dim items As New List(Of Dictionary(Of String, String)) From {
             New Dictionary(Of String, String) From {
+                {"title", "Square One"},
                 {"file", "SquareOne.jpg"},
                 {"description", "This is Square One the places of the places with the places of the places with the places of the places "},
-                {"location", "water"},
+                {"location", "North America"},
                 {"year", "2015"},
                 {"ratings", "4.5"},
                 {"continent", "North America"}
             },
             New Dictionary(Of String, String) From {
+                {"title", "Eiffel Tower"},
                 {"file", "eiffelTower.jpg"},
                 {"description", "Square One"},
                 {"location", "Asia"},
@@ -114,6 +116,7 @@
                 {"continent", "Asia"}
             },
             New Dictionary(Of String, String) From {
+                {"title", "Square Two"},
                 {"file", "SquareOne.jpg"},
                 {"description", "Square One"},
                 {"location", "South America"},
