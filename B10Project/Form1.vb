@@ -12,8 +12,4 @@
             AddLocationForm1.Visible = False
         End If
     End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        LocationPage.Show()
-    End Sub
 End Class

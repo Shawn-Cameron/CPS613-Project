@@ -272,7 +272,7 @@ Partial Class LocationPage
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(266, 457)
+        Label10.Location = New Point(260, 457)
         Label10.Name = "Label10"
         Label10.Size = New Size(35, 18)
         Label10.TabIndex = 10
@@ -282,7 +282,7 @@ Partial Class LocationPage
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(301, 457)
+        Label11.Location = New Point(291, 457)
         Label11.Name = "Label11"
         Label11.Size = New Size(67, 18)
         Label11.TabIndex = 11
@@ -294,7 +294,7 @@ Partial Class LocationPage
         RoundButton3.FlatAppearance.BorderSize = 0
         RoundButton3.FlatStyle = FlatStyle.Flat
         RoundButton3.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        RoundButton3.Location = New Point(226, 477)
+        RoundButton3.Location = New Point(227, 477)
         RoundButton3.Margin = New Padding(0)
         RoundButton3.Name = "RoundButton3"
         RoundButton3.Size = New Size(25, 25)
@@ -309,7 +309,7 @@ Partial Class LocationPage
         RoundButton4.FlatAppearance.BorderSize = 0
         RoundButton4.FlatStyle = FlatStyle.Flat
         RoundButton4.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        RoundButton4.Location = New Point(304, 477)
+        RoundButton4.Location = New Point(305, 477)
         RoundButton4.Margin = New Padding(0)
         RoundButton4.Name = "RoundButton4"
         RoundButton4.Size = New Size(25, 25)
@@ -322,7 +322,7 @@ Partial Class LocationPage
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(254, 480)
+        Label12.Location = New Point(255, 480)
         Label12.Name = "Label12"
         Label12.Size = New Size(47, 18)
         Label12.TabIndex = 14

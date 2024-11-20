@@ -54,5 +54,6 @@ Public Class LocationPage
             currentValue += 10
         End If
         Label10.Text = currentValue.ToString()
+
     End Sub
 End Class
