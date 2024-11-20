@@ -28,6 +28,7 @@ Partial Class AddLocationForm
         FilterMenu = New DropDownMenu()
         LocationPanels = New Panel()
         Label2 = New Label()
+        Label3 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -59,10 +60,11 @@ Partial Class AddLocationForm
         ' 
         ' FilterMenu
         ' 
-        FilterMenu.BackColor = SystemColors.Control
+        FilterMenu.BackColor = Color.Transparent
+        FilterMenu.ForeColor = SystemColors.ControlText
         FilterMenu.Location = New Point(641, 17)
         FilterMenu.Name = "FilterMenu"
-        FilterMenu.Size = New Size(123, 30)
+        FilterMenu.Size = New Size(123, 27)
         FilterMenu.TabIndex = 6
         ' 
         ' LocationPanels
@@ -82,10 +84,21 @@ Partial Class AddLocationForm
         Label2.TabIndex = 1
         Label2.Text = "______________________________________________________________________________________________________________________________________________________________________________________________"
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(809, 65)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(102, 15)
+        Label3.TabIndex = 8
+        Label3.Text = "Current Year: 2372"
+        ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(Label3)
         Controls.Add(FilterMenu)
         Controls.Add(LocationPanels)
         Controls.Add(SearchTextBoxPlaceholder)
@@ -104,5 +117,6 @@ Partial Class AddLocationForm
     Friend WithEvents FilterMenu As DropDownMenu
     Friend WithEvents LocationPanels As Panel
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 
 End Class

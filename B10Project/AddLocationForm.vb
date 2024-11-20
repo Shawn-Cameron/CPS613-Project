@@ -33,7 +33,7 @@
             ContentCard.Location = New Point(nextXCoor, nextYCoor)
             SetNextCCLocation()
         Next
-
+        filterContentCards()
         LocationPanels.AutoScrollMinSize = New Size(LocationPanels.Width, nextYCoor + 300)
     End Sub
 
@@ -47,6 +47,9 @@
 
     End Sub
 
+    Private Sub filterContentCards()
+        Dim options = FilterMenu.GetFilterOptions()
+    End Sub
 
     'Returns the list of all the data for the content cards
     Private Function GetContentCardsData()
@@ -59,7 +62,7 @@
                 {"ratings", "4.5"}
             },
             New Dictionary(Of String, String) From {
-                {"file", "SquareOne.jpg"},
+                {"file", "eiffelTower.jpg"},
                 {"description", "Square One"},
                 {"location", "here"},
                 {"year", "1990"},

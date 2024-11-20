@@ -1,4 +1,6 @@
 ﻿Public Class LocationContentCard
+    Private origColor As Color = Me.BackColor
+
     Public Sub New(fileName As String, descript As String, loc As String, year As String, rating As String)
         InitializeComponent()
 
@@ -12,9 +14,19 @@
         YearLabel.Text = year
         RatingsLabel.Text = rating
 
+        For Each child As Control In Me.Controls
+            AddHandler child.MouseEnter, AddressOf LocationContentCard_MouseEnter
+            AddHandler child.MouseLeave, AddressOf LocationContentCard_MouseLeave
+        Next
+
     End Sub
 
     Private Sub LocationContentCard_MouseEnter(sender As Object, e As EventArgs) Handles Me.MouseEnter
+        Me.BackColor = Color.LightGray
+    End Sub
+
+    Private Sub LocationContentCard_MouseLeave(sender As Object, e As EventArgs) Handles Me.MouseLeave
+        Me.BackColor = origColor
 
     End Sub
 End Class

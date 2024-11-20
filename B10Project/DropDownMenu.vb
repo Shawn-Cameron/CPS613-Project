@@ -4,6 +4,8 @@
 
     Private Sub DropDownMenu_Load(sender As Object, e As EventArgs) Handles Me.Load
         FilterOptionsUpdate()
+        Me.SetStyle(ControlStyles.SupportsTransparentBackColor, True)
+        Me.BackColor = Color.Transparent
     End Sub
 
     Private Sub filterBtn_Click(sender As Object, e As EventArgs) Handles filterBtn.Click
@@ -36,7 +38,7 @@
 
 
         Else
-            Me.Size = New Size(123, 30)
+            Me.Size = New Size(123, 27)
             OptionsListBox.Visible = False
             ContinentsBtn.Visible = False
             filterBtn.Text = filterBtn.Text.Substring(0, filterBtn.Text.Length - 1) & ">"
@@ -47,6 +49,22 @@
 
     End Sub
 
+    Public Function GetFilterOptions()
+        Dim options As List(Of String) = New List(Of String)
+        For Each item As Object In OptionsListBox.SelectedItems
+            options.Add(item)
+        Next
+
+        Dim continents As List(Of String) = New List(Of String)
+        For Each item As Object In ContinentsListBox.SelectedItems
+            continents.Add(item)
+        Next
+
+        Return New List(Of List(Of String)) From {options, continents}
+
+    End Function
+
+    'Unsued 
     Private Sub ListBox_DrawItem(sender As Object, e As DrawItemEventArgs)
         Dim selectionBoxes = DirectCast(sender, ListBox)
 
@@ -70,5 +88,9 @@
 
         e.DrawFocusRectangle()
 
+    End Sub
+
+    Protected Overrides Sub OnPaintBackground(e As PaintEventArgs)
+        ' Do nothing to create a transparent background
     End Sub
 End Class
