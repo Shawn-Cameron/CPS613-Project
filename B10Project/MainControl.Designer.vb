@@ -24,14 +24,15 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
+        TimeRemainingLabel = New Label()
+        Label4 = New Label()
         NumPplLabel = New Label()
         Label3 = New Label()
         Label2 = New Label()
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
-        Label4 = New Label()
-        TimeRemainingLabel = New Label()
+        TravelingArrow1 = New TravelingArrow()
         TripPanel.SuspendLayout()
         SuspendLayout()
         ' 
@@ -46,6 +47,7 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
+        TripPanel.Controls.Add(TravelingArrow1)
         TripPanel.Controls.Add(TimeRemainingLabel)
         TripPanel.Controls.Add(Label4)
         TripPanel.Controls.Add(NumPplLabel)
@@ -55,6 +57,24 @@ Partial Class MainControl
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 297)
         TripPanel.TabIndex = 8
+        ' 
+        ' TimeRemainingLabel
+        ' 
+        TimeRemainingLabel.AutoSize = True
+        TimeRemainingLabel.Location = New Point(860, 11)
+        TimeRemainingLabel.Name = "TimeRemainingLabel"
+        TimeRemainingLabel.Size = New Size(29, 15)
+        TimeRemainingLabel.TabIndex = 4
+        TimeRemainingLabel.Text = "4 Hr"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(764, 11)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(100, 15)
+        Label4.TabIndex = 3
+        Label4.Text = "Time Remaining: "
         ' 
         ' NumPplLabel
         ' 
@@ -113,23 +133,12 @@ Partial Class MainControl
         AddLocBtn.Text = "Add Location"
         AddLocBtn.UseVisualStyleBackColor = True
         ' 
-        ' Label4
+        ' TravelingArrow1
         ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(764, 11)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(100, 15)
-        Label4.TabIndex = 3
-        Label4.Text = "Time Remaining: "
-        ' 
-        ' TimeRemainingLabel
-        ' 
-        TimeRemainingLabel.AutoSize = True
-        TimeRemainingLabel.Location = New Point(860, 11)
-        TimeRemainingLabel.Name = "TimeRemainingLabel"
-        TimeRemainingLabel.Size = New Size(29, 15)
-        TimeRemainingLabel.TabIndex = 4
-        TimeRemainingLabel.Text = "4 Hr"
+        TravelingArrow1.Location = New Point(3, 147)
+        TravelingArrow1.Name = "TravelingArrow1"
+        TravelingArrow1.Size = New Size(143, 83)
+        TravelingArrow1.TabIndex = 5
         ' 
         ' MainControl
         ' 
@@ -159,5 +168,6 @@ Partial Class MainControl
     Friend WithEvents NumPplLabel As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TimeRemainingLabel As Label
+    Friend WithEvents TravelingArrow1 As TravelingArrow
 
 End Class

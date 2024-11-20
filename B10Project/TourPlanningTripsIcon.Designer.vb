@@ -33,10 +33,10 @@ Partial Class TourPlanningTripsIcon
         ' 
         ' Label1
         ' 
-        Label1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(15, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(168, 22)
+        Label1.Size = New Size(115, 22)
         Label1.TabIndex = 0
         Label1.Text = "Name"
         Label1.TextAlign = ContentAlignment.MiddleCenter
@@ -45,13 +45,14 @@ Partial Class TourPlanningTripsIcon
         ' 
         PictureBox1.Location = New Point(15, 25)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(168, 125)
+        PictureBox1.Size = New Size(115, 101)
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
         ' TimeLabel
         ' 
-        TimeLabel.Location = New Point(46, 153)
+        TimeLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TimeLabel.Location = New Point(21, 129)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(95, 23)
         TimeLabel.TabIndex = 2
@@ -60,7 +61,8 @@ Partial Class TourPlanningTripsIcon
         ' 
         ' Label2
         ' 
-        Label2.Location = New Point(46, 176)
+        Label2.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(21, 152)
         Label2.Name = "Label2"
         Label2.Size = New Size(95, 23)
         Label2.TabIndex = 3
@@ -70,18 +72,20 @@ Partial Class TourPlanningTripsIcon
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(57, 209)
+        Label3.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(21, 175)
         Label3.Name = "Label3"
-        Label3.Size = New Size(59, 15)
+        Label3.Size = New Size(59, 13)
         Label3.TabIndex = 4
         Label3.Text = "Duration: "
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(113, 210)
+        Label4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(86, 175)
         Label4.Name = "Label4"
-        Label4.Size = New Size(29, 15)
+        Label4.Size = New Size(28, 13)
         Label4.TabIndex = 5
         Label4.Text = "1 Hr"
         ' 
@@ -96,7 +100,7 @@ Partial Class TourPlanningTripsIcon
         Controls.Add(PictureBox1)
         Controls.Add(Label1)
         Name = "TourPlanningTripsIcon"
-        Size = New Size(199, 236)
+        Size = New Size(144, 203)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

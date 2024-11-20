@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\travelingarrow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:travelingarrow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\travelingarrow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:travelingarrow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -39,20 +35,32 @@
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:tourplanningtripsicon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\tourplanningtripsicon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:tourplanningtripsicon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\searchbar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -74,11 +82,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "TourPlanningTripsIcon.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TourPlanningTripsIcon.vb",
               "RelativeDocumentMoniker": "TourPlanningTripsIcon.vb",
@@ -92,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "TourPlanningTripsIcon.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TourPlanningTripsIcon.vb",
               "RelativeDocumentMoniker": "TourPlanningTripsIcon.vb",
@@ -105,21 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainControl.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
-              "RelativeDocumentMoniker": "MainControl.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
-              "RelativeToolTip": "MainControl.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.811Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "MainControl.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
               "RelativeDocumentMoniker": "MainControl.vb",
@@ -131,22 +125,63 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LocationContentCard.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
-              "RelativeDocumentMoniker": "LocationContentCard.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
-              "RelativeToolTip": "LocationContentCard.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TravelingArrow.vb",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TravelingArrow.vb",
+              "RelativeDocumentMoniker": "TravelingArrow.vb",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TravelingArrow.vb*",
+              "RelativeToolTip": "TravelingArrow.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.802Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-20T18:27:16.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "TravelingArrow.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TravelingArrow.vb",
+              "RelativeDocumentMoniker": "TravelingArrow.vb",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\TravelingArrow.vb [Design]*",
+              "RelativeToolTip": "TravelingArrow.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T18:24:29.356Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainControl.vb",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
+              "RelativeDocumentMoniker": "MainControl.vb",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
+              "RelativeToolTip": "MainControl.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T14:47:56.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocationPage.vb",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationPage.vb",
+              "RelativeDocumentMoniker": "LocationPage.vb",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationPage.vb",
+              "RelativeToolTip": "LocationPage.vb",
+              "ViewState": "AgIAABsAAAAAAAAAAAA5wEwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T14:47:56.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LocationPage.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationPage.vb",
               "RelativeDocumentMoniker": "LocationPage.vb",
@@ -154,30 +189,24 @@
               "RelativeToolTip": "LocationPage.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-20T14:47:56.78Z",
-              "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocationPage.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationPage.vb",
-              "RelativeDocumentMoniker": "LocationPage.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationPage.vb",
-              "RelativeToolTip": "LocationPage.vb",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEkAAABJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LocationContentCard.vb",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
+              "RelativeDocumentMoniker": "LocationContentCard.vb",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
+              "RelativeToolTip": "LocationContentCard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.788Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-20T14:47:56.802Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
@@ -185,12 +214,11 @@
               "RelativeToolTip": "Form1.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T14:47:56.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "DropDownMenu.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb",
               "RelativeDocumentMoniker": "DropDownMenu.vb",
@@ -198,25 +226,23 @@
               "RelativeToolTip": "DropDownMenu.vb",
               "ViewState": "AgIAACkAAAAAAAAAAAAIwDMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T14:47:56.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "AddLocationForm.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb",
               "RelativeDocumentMoniker": "AddLocationForm.vb",
               "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb",
               "RelativeToolTip": "AddLocationForm.vb",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwCMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwCMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T14:47:56.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
@@ -228,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "RoundButton.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\RoundButton.vb",
               "RelativeDocumentMoniker": "RoundButton.vb",
@@ -236,12 +262,11 @@
               "RelativeToolTip": "RoundButton.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T14:47:56.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DropDownMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb",
               "RelativeDocumentMoniker": "DropDownMenu.vb",
@@ -253,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "SearchBar.vb",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\SearchBar.vb",
               "RelativeDocumentMoniker": "SearchBar.vb",
@@ -261,12 +286,11 @@
               "RelativeToolTip": "SearchBar.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T14:47:56.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T14:47:56.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "LocationContentCard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
               "RelativeDocumentMoniker": "LocationContentCard.vb",

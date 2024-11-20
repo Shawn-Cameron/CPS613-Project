@@ -35,7 +35,9 @@
     End Sub
 
     Private Sub LocationContentCard_Click(sender As Object, e As EventArgs) Handles Me.Click
-        Dim associatedLocationPage As New LocationPage(Me)
+        Dim rnd As New Random()
+        Dim values() As Integer = {10, 20, 30, 40}
+        Dim associatedLocationPage As New LocationPage(Me, values(rnd.Next(0, values.Length)))
         associatedLocationPage.Show()
     End Sub
 End Class

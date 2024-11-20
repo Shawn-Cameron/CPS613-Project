@@ -28,5 +28,8 @@
     <Compile Update="TourPlanningTripsIcon.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TravelingArrow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

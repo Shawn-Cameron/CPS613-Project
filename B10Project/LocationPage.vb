@@ -5,11 +5,14 @@ Public Class LocationPage
     Private currentIndex As Integer = 0
     Private _cardData As LocationContentCard
     Private currentTime As Integer
+    Private _timeToReach As Integer
 
-    Public Sub New(cardData As LocationContentCard)
+    Public Sub New(cardData As LocationContentCard, timeToReach As Integer)
         InitializeComponent()
         _cardData = cardData
         DescripLabel.Text = cardData.myData("Loc Description")
+        TimeToReachLabel.Text = timeToReach.ToString()
+        _timeToReach = timeToReach
     End Sub
 
     Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
@@ -71,7 +74,6 @@ Public Class LocationPage
     End Sub
 
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
-        Dim timeToReach As Integer = Integer.Parse(TimeToReachLabel.Text)
-        Form1.MainControl1.AddNewLocation(_cardData.myData, timeToReach, currentTime)
+        Form1.MainControl1.AddNewLocation(_cardData.myData, _timeToReach, currentTime)
     End Sub
 End Class
