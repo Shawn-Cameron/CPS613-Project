@@ -25,5 +25,8 @@
     <Compile Update="SearchBar.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="TourPlanningTripsIcon.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -24,10 +24,14 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
+        NumPplLabel = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
-        Label2 = New Label()
+        Label4 = New Label()
+        TimeRemainingLabel = New Label()
         TripPanel.SuspendLayout()
         SuspendLayout()
         ' 
@@ -42,11 +46,43 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
+        TripPanel.Controls.Add(TimeRemainingLabel)
+        TripPanel.Controls.Add(Label4)
+        TripPanel.Controls.Add(NumPplLabel)
+        TripPanel.Controls.Add(Label3)
         TripPanel.Controls.Add(Label2)
         TripPanel.Location = New Point(13, 189)
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 297)
         TripPanel.TabIndex = 8
+        ' 
+        ' NumPplLabel
+        ' 
+        NumPplLabel.AutoSize = True
+        NumPplLabel.Location = New Point(121, 40)
+        NumPplLabel.Name = "NumPplLabel"
+        NumPplLabel.Size = New Size(13, 15)
+        NumPplLabel.TabIndex = 2
+        NumPplLabel.Text = "1"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(13, 40)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(107, 15)
+        Label3.TabIndex = 1
+        Label3.Text = "Number of People:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(13, 9)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(86, 17)
+        Label2.TabIndex = 0
+        Label2.Text = "Current Tour"
         ' 
         ' EditTripBtn
         ' 
@@ -77,15 +113,23 @@ Partial Class MainControl
         AddLocBtn.Text = "Add Location"
         AddLocBtn.UseVisualStyleBackColor = True
         ' 
-        ' Label2
+        ' Label4
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(13, 9)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(84, 17)
-        Label2.TabIndex = 0
-        Label2.Text = "Current Tour:"
+        Label4.AutoSize = True
+        Label4.Location = New Point(764, 11)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(100, 15)
+        Label4.TabIndex = 3
+        Label4.Text = "Time Remaining: "
+        ' 
+        ' TimeRemainingLabel
+        ' 
+        TimeRemainingLabel.AutoSize = True
+        TimeRemainingLabel.Location = New Point(860, 11)
+        TimeRemainingLabel.Name = "TimeRemainingLabel"
+        TimeRemainingLabel.Size = New Size(29, 15)
+        TimeRemainingLabel.TabIndex = 4
+        TimeRemainingLabel.Text = "4 Hr"
         ' 
         ' MainControl
         ' 
@@ -111,5 +155,9 @@ Partial Class MainControl
     Friend WithEvents Label1 As Label
     Friend WithEvents AddLocBtn As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents NumPplLabel As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TimeRemainingLabel As Label
 
 End Class
