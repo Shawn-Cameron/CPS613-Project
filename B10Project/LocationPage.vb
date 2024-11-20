@@ -3,6 +3,15 @@
 Public Class LocationPage
     Private imagePaths As List(Of String) = New List(Of String)()
     Private currentIndex As Integer = 0
+    Private _cardData As LocationContentCard
+    Private currentTime As Integer
+
+    Public Sub New(cardData As LocationContentCard)
+        InitializeComponent()
+        _cardData = cardData
+        DescripLabel.Text = cardData.myData("Loc Description")
+    End Sub
+
     Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
         If imagePaths.Count > 0 Then
             currentIndex -= 1
@@ -38,22 +47,31 @@ Public Class LocationPage
         Else
             MessageBox.Show("Image folder not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+
+        currentTime = Integer.Parse(timeLabel.Text)
     End Sub
 
-    Private Sub RoundButton3_Click(sender As Object, e As EventArgs) Handles RoundButton3.Click
-        Dim currentValue As Integer = Integer.Parse(Label10.Text)
-        If currentValue > 30 Then
-            currentValue -= 10
+    Private Sub RmTimeBtn_Click(sender As Object, e As EventArgs) Handles RmTimeBtn.Click
+        If currentTime > 30 Then
+            currentTime -= 10
         End If
-        Label10.Text = currentValue.ToString()
+        timeLabel.Text = currentTime.ToString()
     End Sub
 
-    Private Sub RoundButton4_Click(sender As Object, e As EventArgs) Handles RoundButton4.Click
-        Dim currentValue As Integer = Integer.Parse(Label10.Text)
-        If currentValue < 120 Then
-            currentValue += 10
+    Private Sub AddTimeBtn_Click(sender As Object, e As EventArgs) Handles AddTimeBtn.Click
+        If currentTime < 120 Then
+            currentTime += 10
         End If
-        Label10.Text = currentValue.ToString()
+        timeLabel.Text = currentTime.ToString()
 
+    End Sub
+
+    Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
+        Me.Close()
+    End Sub
+
+    Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
+        Dim timeToReach As Integer = Integer.Parse(TimeToReachLabel.Text)
+        Form1.MainControl1.AddNewLocation(_cardData.myData, timeToReach, currentTime)
     End Sub
 End Class

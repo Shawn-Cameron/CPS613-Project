@@ -37,7 +37,7 @@
 
         For Each item As Dictionary(Of String, String) In items
             If filterContentCards(item) Then
-                Dim ContentCard As LocationContentCard = New LocationContentCard(item("title"), item("file"), item("description"), item("location"), item("year"), item("ratings"))
+                Dim ContentCard As LocationContentCard = New LocationContentCard(item)
                 LocationPanels.Controls.Add(ContentCard)
                 ContentCard.Location = New Point(nextXCoor, nextYCoor)
                 SetNextCCLocation()
@@ -104,7 +104,8 @@
                 {"location", "North America"},
                 {"year", "2015"},
                 {"ratings", "4.5"},
-                {"continent", "North America"}
+                {"continent", "North America"},
+                {"Loc Description", "Description: [New] Square One Shopping Centre, or simply Square One, is a shopping mall located in Mississauga, Ontario, Canada. It is the largest shopping centre in Ontario and the second largest shopping centre in Canada, after the West Edmonton Mall. It has over 2,200,000 square feet (200,000 m2) of retail space, with more than 360 stores and services. On average, the mall serves over 24 million customers each year. It operates on most holidays (the exceptions being Good Friday, Easter Sunday and Christmas Day), making it the only shopping mall in the city and one of the few in the Greater Toronto Area that does so."}
             },
             New Dictionary(Of String, String) From {
                 {"title", "Eiffel Tower"},
@@ -113,7 +114,8 @@
                 {"location", "Asia"},
                 {"year", "1990"},
                 {"ratings", "1.2"},
-                {"continent", "Asia"}
+                {"continent", "Asia"},
+                {"Loc Description", "Description: A long description for this location"}
             },
             New Dictionary(Of String, String) From {
                 {"title", "Square Two"},
@@ -122,7 +124,8 @@
                 {"location", "South America"},
                 {"year", "3000"},
                 {"ratings", "5.0"},
-                {"continent", "South America"}
+                {"continent", "South America"},
+                {"Loc Description", "Description: Another long description for this location"}
             }
         }
 

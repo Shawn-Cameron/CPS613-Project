@@ -24,7 +24,7 @@ Partial Class LocationPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LocationPage))
         PictureBox1 = New PictureBox()
-        Label1 = New Label()
+        DescripLabel = New Label()
         Panel1 = New Panel()
         GroupBox5 = New GroupBox()
         Label7 = New Label()
@@ -41,13 +41,15 @@ Partial Class LocationPage
         RoundButton2 = New RoundButton()
         Label8 = New Label()
         Label9 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        Label10 = New Label()
+        BackBtn = New Button()
+        AddLocBtn = New Button()
+        timeLabel = New Label()
         Label11 = New Label()
-        RoundButton3 = New RoundButton()
-        RoundButton4 = New RoundButton()
+        RmTimeBtn = New RoundButton()
+        AddTimeBtn = New RoundButton()
         Label12 = New Label()
+        TimeToReachLabel = New Label()
+        Label1 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         GroupBox5.SuspendLayout()
@@ -67,15 +69,15 @@ Partial Class LocationPage
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' Label1
+        ' DescripLabel
         ' 
-        Label1.BorderStyle = BorderStyle.FixedSingle
-        Label1.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(12, 289)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(613, 131)
-        Label1.TabIndex = 1
-        Label1.Text = resources.GetString("Label1.Text")
+        DescripLabel.BorderStyle = BorderStyle.FixedSingle
+        DescripLabel.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DescripLabel.Location = New Point(12, 289)
+        DescripLabel.Name = "DescripLabel"
+        DescripLabel.Size = New Size(613, 131)
+        DescripLabel.TabIndex = 1
+        DescripLabel.Text = resources.GetString("DescripLabel.Text")
         ' 
         ' Panel1
         ' 
@@ -94,7 +96,7 @@ Partial Class LocationPage
         ' GroupBox5
         ' 
         GroupBox5.Controls.Add(Label7)
-        GroupBox5.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox5.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox5.Location = New Point(10, 427)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(237, 100)
@@ -104,7 +106,7 @@ Partial Class LocationPage
         ' 
         ' Label7
         ' 
-        Label7.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.Location = New Point(6, 19)
         Label7.Name = "Label7"
         Label7.Size = New Size(225, 78)
@@ -114,7 +116,7 @@ Partial Class LocationPage
         ' GroupBox4
         ' 
         GroupBox4.Controls.Add(Label6)
-        GroupBox4.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox4.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox4.Location = New Point(10, 321)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(237, 100)
@@ -124,7 +126,7 @@ Partial Class LocationPage
         ' 
         ' Label6
         ' 
-        Label6.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label6.Location = New Point(6, 19)
         Label6.Name = "Label6"
         Label6.Size = New Size(225, 78)
@@ -134,7 +136,7 @@ Partial Class LocationPage
         ' GroupBox3
         ' 
         GroupBox3.Controls.Add(Label5)
-        GroupBox3.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox3.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.Location = New Point(10, 215)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(237, 100)
@@ -144,7 +146,7 @@ Partial Class LocationPage
         ' 
         ' Label5
         ' 
-        Label5.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.Location = New Point(6, 19)
         Label5.Name = "Label5"
         Label5.Size = New Size(225, 78)
@@ -154,7 +156,7 @@ Partial Class LocationPage
         ' GroupBox2
         ' 
         GroupBox2.Controls.Add(Label4)
-        GroupBox2.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox2.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.Location = New Point(10, 109)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(237, 100)
@@ -164,7 +166,7 @@ Partial Class LocationPage
         ' 
         ' Label4
         ' 
-        Label4.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(6, 19)
         Label4.Name = "Label4"
         Label4.Size = New Size(225, 78)
@@ -174,7 +176,7 @@ Partial Class LocationPage
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox1.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox1.Location = New Point(10, 3)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(237, 100)
@@ -184,7 +186,7 @@ Partial Class LocationPage
         ' 
         ' Label3
         ' 
-        Label3.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(6, 19)
         Label3.Name = "Label3"
         Label3.Size = New Size(225, 78)
@@ -207,7 +209,7 @@ Partial Class LocationPage
         RoundButton1.BackColor = SystemColors.ActiveBorder
         RoundButton1.FlatAppearance.BorderSize = 0
         RoundButton1.FlatStyle = FlatStyle.Flat
-        RoundButton1.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        RoundButton1.Font = New Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point)
         RoundButton1.Location = New Point(18, 136)
         RoundButton1.Name = "RoundButton1"
         RoundButton1.Size = New Size(30, 30)
@@ -220,7 +222,7 @@ Partial Class LocationPage
         RoundButton2.BackColor = SystemColors.ActiveBorder
         RoundButton2.FlatAppearance.BorderSize = 0
         RoundButton2.FlatStyle = FlatStyle.Flat
-        RoundButton2.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        RoundButton2.Font = New Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point)
         RoundButton2.Location = New Point(589, 136)
         RoundButton2.Name = "RoundButton2"
         RoundButton2.Size = New Size(30, 30)
@@ -234,9 +236,9 @@ Partial Class LocationPage
         Label8.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label8.Location = New Point(12, 430)
         Label8.Name = "Label8"
-        Label8.Size = New Size(291, 18)
+        Label8.Size = New Size(209, 18)
         Label8.TabIndex = 6
-        Label8.Text = "Time to reach destination: 10 minutes"
+        Label8.Text = "Time to reach destination: "
         ' 
         ' Label9
         ' 
@@ -248,35 +250,35 @@ Partial Class LocationPage
         Label9.TabIndex = 7
         Label9.Text = "How long do you want to spend: "
         ' 
-        ' Button1
+        ' BackBtn
         ' 
-        Button1.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(12, 536)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(117, 40)
-        Button1.TabIndex = 8
-        Button1.Text = "BACK"
-        Button1.UseVisualStyleBackColor = True
+        BackBtn.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        BackBtn.Location = New Point(12, 536)
+        BackBtn.Name = "BackBtn"
+        BackBtn.Size = New Size(117, 40)
+        BackBtn.TabIndex = 8
+        BackBtn.Text = "BACK"
+        BackBtn.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' AddLocBtn
         ' 
-        Button2.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(721, 536)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(184, 40)
-        Button2.TabIndex = 9
-        Button2.Text = "ADD LOCATION"
-        Button2.UseVisualStyleBackColor = True
+        AddLocBtn.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        AddLocBtn.Location = New Point(721, 536)
+        AddLocBtn.Name = "AddLocBtn"
+        AddLocBtn.Size = New Size(184, 40)
+        AddLocBtn.TabIndex = 9
+        AddLocBtn.Text = "ADD LOCATION"
+        AddLocBtn.UseVisualStyleBackColor = True
         ' 
-        ' Label10
+        ' timeLabel
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(260, 457)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(35, 18)
-        Label10.TabIndex = 10
-        Label10.Text = "120"
+        timeLabel.AutoSize = True
+        timeLabel.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        timeLabel.Location = New Point(260, 457)
+        timeLabel.Name = "timeLabel"
+        timeLabel.Size = New Size(26, 18)
+        timeLabel.TabIndex = 10
+        timeLabel.Text = "60"
         ' 
         ' Label11
         ' 
@@ -288,35 +290,35 @@ Partial Class LocationPage
         Label11.TabIndex = 11
         Label11.Text = "minutes"
         ' 
-        ' RoundButton3
+        ' RmTimeBtn
         ' 
-        RoundButton3.BackColor = SystemColors.ActiveBorder
-        RoundButton3.FlatAppearance.BorderSize = 0
-        RoundButton3.FlatStyle = FlatStyle.Flat
-        RoundButton3.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        RoundButton3.Location = New Point(227, 477)
-        RoundButton3.Margin = New Padding(0)
-        RoundButton3.Name = "RoundButton3"
-        RoundButton3.Size = New Size(25, 25)
-        RoundButton3.TabIndex = 12
-        RoundButton3.Text = "-"
-        RoundButton3.UseCompatibleTextRendering = True
-        RoundButton3.UseVisualStyleBackColor = False
+        RmTimeBtn.BackColor = SystemColors.ActiveBorder
+        RmTimeBtn.FlatAppearance.BorderSize = 0
+        RmTimeBtn.FlatStyle = FlatStyle.Flat
+        RmTimeBtn.Font = New Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RmTimeBtn.Location = New Point(227, 477)
+        RmTimeBtn.Margin = New Padding(0)
+        RmTimeBtn.Name = "RmTimeBtn"
+        RmTimeBtn.Size = New Size(25, 25)
+        RmTimeBtn.TabIndex = 12
+        RmTimeBtn.Text = "-"
+        RmTimeBtn.UseCompatibleTextRendering = True
+        RmTimeBtn.UseVisualStyleBackColor = False
         ' 
-        ' RoundButton4
+        ' AddTimeBtn
         ' 
-        RoundButton4.BackColor = SystemColors.ActiveBorder
-        RoundButton4.FlatAppearance.BorderSize = 0
-        RoundButton4.FlatStyle = FlatStyle.Flat
-        RoundButton4.Font = New Font("Arial Narrow", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        RoundButton4.Location = New Point(305, 477)
-        RoundButton4.Margin = New Padding(0)
-        RoundButton4.Name = "RoundButton4"
-        RoundButton4.Size = New Size(25, 25)
-        RoundButton4.TabIndex = 13
-        RoundButton4.Text = "+"
-        RoundButton4.UseCompatibleTextRendering = True
-        RoundButton4.UseVisualStyleBackColor = False
+        AddTimeBtn.BackColor = SystemColors.ActiveBorder
+        AddTimeBtn.FlatAppearance.BorderSize = 0
+        AddTimeBtn.FlatStyle = FlatStyle.Flat
+        AddTimeBtn.Font = New Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        AddTimeBtn.Location = New Point(305, 477)
+        AddTimeBtn.Margin = New Padding(0)
+        AddTimeBtn.Name = "AddTimeBtn"
+        AddTimeBtn.Size = New Size(25, 25)
+        AddTimeBtn.TabIndex = 13
+        AddTimeBtn.Text = "+"
+        AddTimeBtn.UseCompatibleTextRendering = True
+        AddTimeBtn.UseVisualStyleBackColor = False
         ' 
         ' Label12
         ' 
@@ -328,25 +330,47 @@ Partial Class LocationPage
         Label12.TabIndex = 14
         Label12.Text = "TIME"
         ' 
+        ' TimeToReachLabel
+        ' 
+        TimeToReachLabel.AutoSize = True
+        TimeToReachLabel.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        TimeToReachLabel.Location = New Point(214, 430)
+        TimeToReachLabel.Name = "TimeToReachLabel"
+        TimeToReachLabel.Size = New Size(26, 18)
+        TimeToReachLabel.TabIndex = 15
+        TimeToReachLabel.Text = "10"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(235, 430)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(67, 18)
+        Label1.TabIndex = 16
+        Label1.Text = "minutes"
+        ' 
         ' LocationPage
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(917, 588)
+        Controls.Add(Label1)
+        Controls.Add(TimeToReachLabel)
         Controls.Add(Label12)
-        Controls.Add(RoundButton4)
-        Controls.Add(RoundButton3)
+        Controls.Add(AddTimeBtn)
+        Controls.Add(RmTimeBtn)
         Controls.Add(Label11)
-        Controls.Add(Label10)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(timeLabel)
+        Controls.Add(AddLocBtn)
+        Controls.Add(BackBtn)
         Controls.Add(Label9)
         Controls.Add(Label8)
         Controls.Add(RoundButton2)
         Controls.Add(RoundButton1)
         Controls.Add(Label2)
         Controls.Add(Panel1)
-        Controls.Add(Label1)
+        Controls.Add(DescripLabel)
         Controls.Add(PictureBox1)
         Name = "LocationPage"
         Text = "LocationPage"
@@ -362,7 +386,7 @@ Partial Class LocationPage
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents DescripLabel As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox5 As GroupBox
@@ -379,11 +403,13 @@ Partial Class LocationPage
     Friend WithEvents RoundButton2 As RoundButton
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label10 As Label
+    Friend WithEvents BackBtn As Button
+    Friend WithEvents AddLocBtn As Button
+    Friend WithEvents timeLabel As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents RoundButton3 As RoundButton
-    Friend WithEvents RoundButton4 As RoundButton
+    Friend WithEvents RmTimeBtn As RoundButton
+    Friend WithEvents AddTimeBtn As RoundButton
     Friend WithEvents Label12 As Label
+    Friend WithEvents TimeToReachLabel As Label
+    Friend WithEvents Label1 As Label
 End Class

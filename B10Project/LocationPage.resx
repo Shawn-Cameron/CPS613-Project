@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label1.Text" xml:space="preserve">
+  <data name="DescripLabel.Text" xml:space="preserve">
     <value>Description: Square One Shopping Centre, or simply Square One, is a shopping mall located in Mississauga, Ontario, Canada. It is the largest shopping centre in Ontario and the second largest shopping centre in Canada, after the West Edmonton Mall. It has over 2,200,000 square feet (200,000 m2) of retail space, with more than 360 stores and services. On average, the mall serves over 24 million customers each year. It operates on most holidays (the exceptions being Good Friday, Easter Sunday and Christmas Day), making it the only shopping mall in the city and one of the few in the Greater Toronto Area that does so.</value>
   </data>
 </root>
