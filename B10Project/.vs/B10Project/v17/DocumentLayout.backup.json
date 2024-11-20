@@ -1,50 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\",
+  "WorkspaceRootPath": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\roundbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:roundbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\locationpage.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationpage.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:dropdownmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\searchbar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\searchbar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:searchbar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\shawn\\documents\\school\\cps613-project\\b10project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:locationcontentcard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:addlocationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|c:\\users\\samin\\documents\\github\\cps613-project\\b10project\\maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{979A61CC-9F12-4F9F-85E4-8F2644226ED8}|B10Project.vbproj|solutionrelative:maincontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,15 +70,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DropDownMenu.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\DropDownMenu.vb",
               "RelativeDocumentMoniker": "DropDownMenu.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\DropDownMenu.vb",
               "RelativeToolTip": "DropDownMenu.vb",
               "ViewState": "AgIAACkAAAAAAAAAAAAIwDMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -73,13 +89,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AddLocationForm.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\AddLocationForm.vb",
               "RelativeDocumentMoniker": "AddLocationForm.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\AddLocationForm.vb",
               "RelativeToolTip": "AddLocationForm.vb",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvzIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-17T17:14:49.064Z",
               "IsPinned": true,
@@ -91,23 +107,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddLocationForm.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb",
-              "RelativeDocumentMoniker": "AddLocationForm.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\AddLocationForm.vb [Design]",
-              "RelativeToolTip": "AddLocationForm.vb [Design]",
+              "DocumentIndex": 0,
+              "Title": "LocationPage.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.vb",
+              "RelativeDocumentMoniker": "LocationPage.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.vb [Design]*",
+              "RelativeToolTip": "LocationPage.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-17T17:06:21.029Z",
+              "WhenOpened": "2024-11-20T04:52:38.49Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\Form1.vb",
+              "RelativeDocumentMoniker": "Form1.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\Form1.vb [Design]",
+              "RelativeToolTip": "Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T02:58:02.421Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoundButton.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\RoundButton.vb",
+              "RelativeDocumentMoniker": "RoundButton.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\RoundButton.vb",
+              "RelativeToolTip": "RoundButton.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T05:51:05.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocationPage.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.vb",
+              "RelativeDocumentMoniker": "LocationPage.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.vb*",
+              "RelativeToolTip": "LocationPage.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T05:04:52.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LocationPage.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.Designer.vb",
+              "RelativeDocumentMoniker": "LocationPage.Designer.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationPage.Designer.vb*",
+              "RelativeToolTip": "LocationPage.Designer.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-20T05:51:28.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DropDownMenu.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\DropDownMenu.vb",
               "RelativeDocumentMoniker": "DropDownMenu.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\DropDownMenu.vb [Design]",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\DropDownMenu.vb [Design]",
               "RelativeToolTip": "DropDownMenu.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-17T20:45:33.818Z",
@@ -115,36 +182,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LocationContentCard.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
-              "RelativeDocumentMoniker": "LocationContentCard.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
-              "RelativeToolTip": "LocationContentCard.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\Form1.vb",
+              "RelativeDocumentMoniker": "Form1.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\Form1.vb",
+              "RelativeToolTip": "Form1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-19T18:19:07.981Z",
+              "WhenOpened": "2024-11-11T17:03:05.439Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LocationContentCard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb",
-              "RelativeDocumentMoniker": "LocationContentCard.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\LocationContentCard.vb [Design]",
-              "RelativeToolTip": "LocationContentCard.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-19T18:11:14.657Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "SearchBar.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\SearchBar.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\SearchBar.vb",
               "RelativeDocumentMoniker": "SearchBar.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\SearchBar.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\SearchBar.vb",
               "RelativeToolTip": "SearchBar.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -153,53 +208,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
+              "Title": "LocationContentCard.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationContentCard.vb",
+              "RelativeDocumentMoniker": "LocationContentCard.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationContentCard.vb",
+              "RelativeToolTip": "LocationContentCard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-19T18:19:07.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LocationContentCard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationContentCard.vb",
+              "RelativeDocumentMoniker": "LocationContentCard.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\LocationContentCard.vb [Design]",
+              "RelativeToolTip": "LocationContentCard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-19T18:11:14.657Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddLocationForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\AddLocationForm.vb",
+              "RelativeDocumentMoniker": "AddLocationForm.vb",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\AddLocationForm.vb [Design]",
+              "RelativeToolTip": "AddLocationForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-17T17:06:21.029Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "MainControl.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\MainControl.vb",
               "RelativeDocumentMoniker": "MainControl.vb",
               "ToolTip": "MainControl.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "OverriddenGroupName": "",
               "OverriddenToolTip": "MainControl.vb",
-              "WhenOpened": "2024-11-17T17:10:01.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T17:10:01.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "MainControl.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb",
+              "DocumentMoniker": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\MainControl.vb",
               "RelativeDocumentMoniker": "MainControl.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\MainControl.vb [Design]",
+              "ToolTip": "C:\\Users\\samin\\Documents\\GitHub\\CPS613-Project\\B10Project\\MainControl.vb [Design]",
               "RelativeToolTip": "MainControl.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-17T16:57:30.635Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb",
-              "RelativeToolTip": "Form1.vb",
-              "ViewState": "AgIAAAEAAAAAAAAAAAA2wBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-11T17:03:05.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\School\\CPS613-Project\\B10Project\\Form1.vb [Design]",
-              "RelativeToolTip": "Form1.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-20T02:58:02.421Z",
               "EditorCaption": " [Design]"
             }
           ]
