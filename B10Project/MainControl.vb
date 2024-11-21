@@ -1,4 +1,6 @@
-﻿Public Class MainControl
+﻿Imports System.Net
+
+Public Class MainControl
     Dim locList As New List(Of List(Of Object))
     Dim editing As Boolean = False
 
@@ -161,12 +163,21 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Pilot.Button1.Enabled = True
-        Pilot.Label1.Text = "The trip has been confirmed"
+        Dim response
+        If Integer.Parse(TimeRemainingLabel.Text) >= 10 Then
+            response = MsgBox("You have enough time remaining to either extend one of your trips or add another location. Would you still like to continue?", vbYesNo, "Proceed?")
+            If response = vbYes Then
+                Pilot.Button1.Enabled = True
+                Pilot.Label1.Text = "The trip has been confirmed"
+                AddLocBtn.Enabled = False
+                EditTripBtn.Enabled = False
+                Button1.Enabled = False
+                Label5.Text = "Flying To Destination"
+            End If
+        End If
     End Sub
 
     Private Sub MainControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Pilot.Show()
         EditLabel.Visible = False
     End Sub
 
