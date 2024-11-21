@@ -109,9 +109,9 @@ Partial Class LocationContentCard
         YearLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
         YearLabel.Location = New Point(38, 221)
         YearLabel.Name = "YearLabel"
-        YearLabel.Size = New Size(40, 13)
+        YearLabel.Size = New Size(35, 13)
         YearLabel.TabIndex = 7
-        YearLabel.Text = "Label6"
+        YearLabel.Text = "-1222"
         ' 
         ' RatingsLabel
         ' 
@@ -124,7 +124,7 @@ Partial Class LocationContentCard
         ' 
         ' TitleLabel
         ' 
-        TitleLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        TitleLabel.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TitleLabel.Location = New Point(11, 0)
         TitleLabel.Name = "TitleLabel"
         TitleLabel.Size = New Size(166, 30)

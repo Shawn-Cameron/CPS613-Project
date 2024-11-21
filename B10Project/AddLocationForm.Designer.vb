@@ -92,7 +92,7 @@ Partial Class AddLocationForm
         Label3.Name = "Label3"
         Label3.Size = New Size(102, 15)
         Label3.TabIndex = 8
-        Label3.Text = "Current Year: 2372"
+        Label3.Text = "Current Year: 2172"
         ' 
         ' AddLocationForm
         ' 

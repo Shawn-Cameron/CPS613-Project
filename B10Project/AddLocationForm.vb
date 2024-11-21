@@ -71,7 +71,7 @@
             optionsIsTrue = True
         Else
             Dim value As Integer = CInt(cardData("year"))
-            optionsIsTrue = (value >= 2372 And options.Contains("Future")) Or (value < 2372 And options.Contains("Past")) Or (CSng(cardData("ratings")) > 4.0 And options.Contains("Most Popular"))
+            optionsIsTrue = (value >= 2172 And options.Contains("Future")) Or (value < 2172 And options.Contains("Past")) Or (CSng(cardData("ratings")) > 4.0 And options.Contains("Most Popular"))
 
         End If
 
@@ -98,34 +98,81 @@
     Private Function GetContentCardsData()
         Dim items As New List(Of Dictionary(Of String, String)) From {
             New Dictionary(Of String, String) From {
-                {"title", "Square One"},
-                {"file", "SquareOne.jpg"},
-                {"description", "This is Square One the places of the places with the places of the places with the places of the places "},
-                {"location", "North America"},
-                {"year", "2015"},
+                {"title", "The Library of Alexandria"},
+                {"file", "AlexLib1.jpg"},
+                {"description", "A hub of ancient knowledge and learning"},
+                {"location", "Alexandria, Egypt"},
+                {"year", "-300"},
                 {"ratings", "4.5"},
-                {"continent", "North America"},
-                {"Loc Description", "Description: [New] Square One Shopping Centre, or simply Square One, is a shopping mall located in Mississauga, Ontario, Canada. It is the largest shopping centre in Ontario and the second largest shopping centre in Canada, after the West Edmonton Mall. It has over 2,200,000 square feet (200,000 m2) of retail space, with more than 360 stores and services. On average, the mall serves over 24 million customers each year. It operates on most holidays (the exceptions being Good Friday, Easter Sunday and Christmas Day), making it the only shopping mall in the city and one of the few in the Greater Toronto Area that does so."}
+                {"continent", "Africa"},
+                {"Loc Description", "Description: The Library of Alexandria was an unparalleled center of knowledge and learning in the ancient world. Founded in the 3rd century BCE during the reign of Pharaoh Ptolemy II, the library aimed to collect all the world’s knowledge in one place. Situated in the city of Alexandria, Egypt, it was part of a larger research institution known as the Mouseion, dedicated to the study of science, literature, and philosophy."},
+                {"images", "AlexLib1.jpg AlexLib2.jpg"}
             },
             New Dictionary(Of String, String) From {
-                {"title", "Eiffel Tower"},
-                {"file", "eiffelTower.jpg"},
-                {"description", "Square One"},
+                {"title", "The Hanging Gardens of Babylon"},
+                {"file", "babylon.jpg"},
+                {"description", "One of the Seven Wonders of the Ancient World"},
                 {"location", "Asia"},
-                {"year", "1990"},
-                {"ratings", "1.2"},
+                {"year", "-600"},
+                {"ratings", "3.2"},
                 {"continent", "Asia"},
-                {"Loc Description", "Description: A long description for this location"}
+                {"Loc Description", "Description: The Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World, is shrouded in legend and mystery. Believed to have been built in 600 BCE by King Nebuchadnezzar II for his queen, Amytis, the gardens were a breathtaking display of architectural and engineering brilliance. According to ancient accounts, the gardens featured tiered terraces covered with lush vegetation, cascading waterfalls, and vibrant flowers, creating the illusion of a green mountain in the heart of the arid Mesopotamian landscape."},
+                {"images", "babylon.jpg babylon2.jpg"}
             },
             New Dictionary(Of String, String) From {
-                {"title", "Square Two"},
-                {"file", "SquareOne.jpg"},
-                {"description", "Square One"},
-                {"location", "South America"},
-                {"year", "3000"},
-                {"ratings", "5.0"},
+                {"title", "The First Olympic Games"},
+                {"file", "Olympic1.jpg"},
+                {"description", "The original Olympic games held in Olympia"},
+                {"location", "Olympia, Greece"},
+                {"year", "-776"},
+                {"ratings", "4.9"},
+                {"continent", "Europe"},
+                {"Loc Description", "Description: The First Olympic Games, held in 776 BCE in Olympia, Greece, marked the beginning of one of humanity's longest-standing traditions. Originally conceived as a religious festival to honor Zeus, the king of the Greek gods, the games were held every four years in a sacred grove. Athletes from city-states across ancient Greece competed in events that tested physical prowess and endurance, including foot races, wrestling, chariot racing, and discus throwing."},
+                {"images", "Olympic1.jpg Olymic2.jpg"}
+            },
+            New Dictionary(Of String, String) From {
+                {"title", "The Construction of the Great Pyramids of Giza"},
+                {"file", "pyramids.jpg"},
+                {"description", "The marvel of ancient engineering and human ingenuity"},
+                {"location", "Olympia, Greece"},
+                {"year", "-776"},
+                {"ratings", "4.9"},
+                {"continent", "Europe"},
+                {"Loc Description", "Description: Witnessing the construction of the Great Pyramid of Giza, a marvel of ancient engineering and human ingenuity, would be a breathtaking experience. Built as a tomb for Pharaoh Khufu, this towering structure—standing at an original height of 146.6 meters—was constructed using massive limestone and granite blocks, some weighing up to 80 tons. Time travelers could observe the intricate logistics of transporting these stones from quarries using sledges and ramps, the labor force of skilled workers and conscripts, and the cultural and religious significance of this enduring monument. The site, bustling with activity, would reveal the advanced techniques and sheer determination that defined ancient Egypt's golden age."},
+                {"images", "pyramids.jpg"}
+            },
+            New Dictionary(Of String, String) From {
+                {"title", "Rewilded Amazon Biosphere"},
+                {"file", "amazon3.jpg"},
+                {"description", "The restored Amazon rainforest preserved thought technology"},
+                {"location", "Amazon Basin, South America"},
+                {"year", "2550"},
+                {"ratings", "3.9"},
                 {"continent", "South America"},
-                {"Loc Description", "Description: Another long description for this location"}
+                {"Loc Description", "Description: The Rewilded Amazon Biosphere is a visionary ecological restoration project set in the heart of the Amazon rainforest. This vast biodome initiative combines cutting-edge technology with environmental science to restore and preserve one of Earth's most vital ecosystems. The biosphere encompasses expansive protected zones where extinct and endangered species have been reintroduced through advanced genetic engineering and habitat rehabilitation."},
+                {"images", "amazon.jpg amazon2.jpg amazon3.jpg"}
+            },
+            New Dictionary(Of String, String) From {
+                {"title", "The Great Nation of Nexia"},
+                {"file", "NexiaFlag.jpg"},
+                {"description", "The nation home of all robots"},
+                {"location", "Colorado"},
+                {"year", "2369"},
+                {"ratings", "3.9"},
+                {"continent", "North America"},
+                {"Loc Description", "Description: Nexia, the world's first fully AI-governed nation, is a testament to the unrelenting pursuit of technological utopia. Human leadership has been replaced entirely by a centralized artificial intelligence system known as 'Echelon.' Echelon controls every aspect of governance, from economic policies and environmental management to public safety and legal systems. Laws are optimized in real-time, resources are allocated with unparalleled precision, and societal issues are resolved through data-driven decisions devoid of human bias. Citizens enjoy seamless integration of technology into their daily lives, with personalized AI assistants guiding their education, careers, and healthcare."},
+                {"images", "Nexia.jpg NexiaFlag.jpg"}
+            },
+            New Dictionary(Of String, String) From {
+                {"title", "The Great Chronos Museum"},
+                {"file", "timeMuseum.jpg"},
+                {"description", "A one-of-a-kind institution dedicated to the exploration of time."},
+                {"location", "Shanghai, China"},
+                {"year", "2201"},
+                {"ratings", "3.9"},
+                {"continent", "Asia"},
+                {"Loc Description", "Description: The Chronos Museum is a one-of-a-kind institution dedicated to the exploration of time. It houses exhibits on time-travel technology, theoretical models of time, historical artifacts, and futuristic projections, offering visitors a journey through the science, philosophy, and cultural impact of time itself."},
+                {"images", "timeMuseum.jpg timeMuseum2.jpg"}
             }
         }
 
