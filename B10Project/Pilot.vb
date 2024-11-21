@@ -26,6 +26,7 @@
             Button4.Visible = True
             Button5.Visible = True
             Timer1.Enabled = True
+            Form1.MainControl1.Label5.Text = "Flying to Destination"
         End If
 
 
@@ -96,6 +97,11 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Form1.MainControl1.Label5.Text = "EMERGENCY!!!"
+        Form1.MainControl1.AddLocBtn.Visible = False
+        Form1.MainControl1.EditTripBtn.Visible = False
+        Form1.MainControl1.Button1.Visible = False
+        Form1.MainControl1.TripPanel.Visible = False
+        Form1.MainControl1.BackColor = Color.Red
         Label1.Text = "RED ALERT!!!"
         Me.BackColor = Color.Red
         Label2.Visible = False

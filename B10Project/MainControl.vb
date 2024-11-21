@@ -5,7 +5,6 @@ Public Class MainControl
     Dim editing As Boolean = False
 
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
-        EditTripBtn_Click(Nothing, EventArgs.Empty)
         Form1.SwitchForms()
     End Sub
 
@@ -172,8 +171,17 @@ Public Class MainControl
                 AddLocBtn.Enabled = False
                 EditTripBtn.Enabled = False
                 Button1.Enabled = False
-                Label5.Text = "Flying To Destination"
+                Label5.Text = "Waiting on Pilot"
+                Label5.BringToFront()
             End If
+        Else
+            Pilot.Button1.Enabled = True
+            Pilot.Label1.Text = "The trip has been confirmed"
+            AddLocBtn.Enabled = False
+            EditTripBtn.Enabled = False
+            Button1.Enabled = False
+            Label5.Text = "Waiting on Pilot"
+            Label5.BringToFront()
         End If
     End Sub
 

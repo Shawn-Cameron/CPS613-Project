@@ -24,7 +24,6 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
-        Label5 = New Label()
         EditLabel = New Label()
         LocPanel = New Panel()
         EmptyLocLabel = New Label()
@@ -33,6 +32,7 @@ Partial Class MainControl
         NumPplLabel = New Label()
         Label3 = New Label()
         Label2 = New Label()
+        Label5 = New Label()
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
@@ -62,15 +62,6 @@ Partial Class MainControl
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
-        ' 
-        ' Label5
-        ' 
-        Label5.Font = New Font("Arial", 26.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.Location = New Point(16, 265)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(903, 41)
-        Label5.TabIndex = 7
-        Label5.TextAlign = ContentAlignment.TopCenter
         ' 
         ' EditLabel
         ' 
@@ -148,6 +139,15 @@ Partial Class MainControl
         Label2.TabIndex = 0
         Label2.Text = "Current Tour"
         ' 
+        ' Label5
+        ' 
+        Label5.Font = New Font("Arial", 26.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Location = New Point(13, 43)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(903, 41)
+        Label5.TabIndex = 7
+        Label5.TextAlign = ContentAlignment.TopCenter
+        ' 
         ' EditTripBtn
         ' 
         EditTripBtn.Location = New Point(372, 117)
@@ -162,7 +162,7 @@ Partial Class MainControl
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(353, 35)
+        Label1.Location = New Point(343, 35)
         Label1.Name = "Label1"
         Label1.Size = New Size(246, 50)
         Label1.TabIndex = 6
@@ -183,11 +183,11 @@ Partial Class MainControl
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         Controls.Add(Button1)
-        Controls.Add(Label5)
         Controls.Add(TripPanel)
         Controls.Add(EditTripBtn)
         Controls.Add(Label1)
         Controls.Add(AddLocBtn)
+        Controls.Add(Label5)
         Name = "MainControl"
         Size = New Size(933, 590)
         TripPanel.ResumeLayout(False)
