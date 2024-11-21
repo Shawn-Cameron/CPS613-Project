@@ -125,10 +125,10 @@
                 {"description", "The original Olympic games held in Olympia"},
                 {"location", "Olympia, Greece"},
                 {"year", "-776"},
-                {"ratings", "4.9"},
+                {"ratings", "2.0"},
                 {"continent", "Europe"},
                 {"Loc Description", "Description: The First Olympic Games, held in 776 BCE in Olympia, Greece, marked the beginning of one of humanity's longest-standing traditions. Originally conceived as a religious festival to honor Zeus, the king of the Greek gods, the games were held every four years in a sacred grove. Athletes from city-states across ancient Greece competed in events that tested physical prowess and endurance, including foot races, wrestling, chariot racing, and discus throwing."},
-                {"images", "Olympic1.jpg Olymic2.jpg"}
+                {"images", "Olympic1.jpg Olympic2.jpg"}
             },
             New Dictionary(Of String, String) From {
                 {"title", "The Construction of the Great Pyramids of Giza"},
@@ -147,7 +147,7 @@
                 {"description", "The restored Amazon rainforest preserved thought technology"},
                 {"location", "Amazon Basin, South America"},
                 {"year", "2550"},
-                {"ratings", "3.9"},
+                {"ratings", "4.4"},
                 {"continent", "South America"},
                 {"Loc Description", "Description: The Rewilded Amazon Biosphere is a visionary ecological restoration project set in the heart of the Amazon rainforest. This vast biodome initiative combines cutting-edge technology with environmental science to restore and preserve one of Earth's most vital ecosystems. The biosphere encompasses expansive protected zones where extinct and endangered species have been reintroduced through advanced genetic engineering and habitat rehabilitation."},
                 {"images", "amazon.jpg amazon2.jpg amazon3.jpg"}
@@ -158,7 +158,7 @@
                 {"description", "The nation home of all robots"},
                 {"location", "Colorado"},
                 {"year", "2369"},
-                {"ratings", "3.9"},
+                {"ratings", "1.1"},
                 {"continent", "North America"},
                 {"Loc Description", "Description: Nexia, the world's first fully AI-governed nation, is a testament to the unrelenting pursuit of technological utopia. Human leadership has been replaced entirely by a centralized artificial intelligence system known as 'Echelon.' Echelon controls every aspect of governance, from economic policies and environmental management to public safety and legal systems. Laws are optimized in real-time, resources are allocated with unparalleled precision, and societal issues are resolved through data-driven decisions devoid of human bias. Citizens enjoy seamless integration of technology into their daily lives, with personalized AI assistants guiding their education, careers, and healthcare."},
                 {"images", "Nexia.jpg NexiaFlag.jpg"}
@@ -169,7 +169,7 @@
                 {"description", "A one-of-a-kind institution dedicated to the exploration of time."},
                 {"location", "Shanghai, China"},
                 {"year", "2201"},
-                {"ratings", "3.9"},
+                {"ratings", "3.4"},
                 {"continent", "Asia"},
                 {"Loc Description", "Description: The Chronos Museum is a one-of-a-kind institution dedicated to the exploration of time. It houses exhibits on time-travel technology, theoretical models of time, historical artifacts, and futuristic projections, offering visitors a journey through the science, philosophy, and cultural impact of time itself."},
                 {"images", "timeMuseum.jpg timeMuseum2.jpg"}

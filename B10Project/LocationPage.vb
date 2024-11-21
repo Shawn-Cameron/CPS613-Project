@@ -7,12 +7,21 @@ Public Class LocationPage
     Private currentTime As Integer
     Private _timeToReach As Integer
 
+
     Public Sub New(cardData As LocationContentCard, timeToReach As Integer)
         InitializeComponent()
         _cardData = cardData
         DescripLabel.Text = cardData.myData("Loc Description")
         TimeToReachLabel.Text = timeToReach.ToString()
         _timeToReach = timeToReach
+        Dim filesToUse As String() = cardData.myData("images").Split(" ")
+
+        For Each item In filesToUse
+            Dim imgPath As String = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "Resources\", item)
+            imagePaths.Add(imgPath)
+        Next
+
+        RoundButton1_Click(Nothing, EventArgs.Empty)
     End Sub
 
     Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
@@ -36,20 +45,20 @@ Public Class LocationPage
     End Sub
 
     Private Sub LocationPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim folderPath As String = Path.Combine(Application.StartupPath, "Resources") ' Change the path as needed
+        'Dim folderPath As String = Path.Combine(Application.StartupPath, "Resources") ' Change the path as needed
 
-        If Directory.Exists(folderPath) Then
-            imagePaths = Directory.GetFiles(folderPath, "*.jpg").ToList() ' Change "*.jpg" to the appropriate format, e.g., "*.png"
-            imagePaths.AddRange(Directory.GetFiles(folderPath, "*.png"))
+        'If Directory.Exists(folderPath) Then
+        '   imagePaths = Directory.GetFiles(folderPath, "*.jpg").ToList() ' Change "*.jpg" to the appropriate format, e.g., "*.png"
+        '    imagePaths.AddRange(Directory.GetFiles(folderPath, "*.png"))
 
-            If imagePaths.Count > 0 Then
-                PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
-            Else
-                MessageBox.Show("No images found in the folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Else
-            MessageBox.Show("Image folder not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
+        '  If imagePaths.Count > 0 Then
+        '        PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
+        '   Else
+        '        MessageBox.Show("No images found in the folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '            End If
+        ' Else
+        '    MessageBox.Show("Image folder not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    End If
 
         currentTime = Integer.Parse(timeLabel.Text)
     End Sub
