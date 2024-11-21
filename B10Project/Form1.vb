@@ -14,6 +14,10 @@
     End Sub
 
     Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Pilot.Close()
+
+    End Sub
+
+    Private Sub MainControl1_Load(sender As Object, e As EventArgs) Handles MainControl1.Load
+        Pilot.Show()
     End Sub
 End Class

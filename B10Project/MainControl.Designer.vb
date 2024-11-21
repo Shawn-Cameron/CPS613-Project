@@ -24,6 +24,7 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
+        Label5 = New Label()
         EditLabel = New Label()
         LocPanel = New Panel()
         EmptyLocLabel = New Label()
@@ -61,6 +62,15 @@ Partial Class MainControl
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
+        ' 
+        ' Label5
+        ' 
+        Label5.Font = New Font("Arial", 26.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Location = New Point(16, 265)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(903, 41)
+        Label5.TabIndex = 7
+        Label5.TextAlign = ContentAlignment.TopCenter
         ' 
         ' EditLabel
         ' 
@@ -106,7 +116,7 @@ Partial Class MainControl
         Label4.AutoSize = True
         Label4.Location = New Point(731, 11)
         Label4.Name = "Label4"
-        Label4.Size = New Size(132, 15)
+        Label4.Size = New Size(131, 15)
         Label4.TabIndex = 3
         Label4.Text = "Time Remaining (Min): "
         ' 
@@ -173,6 +183,7 @@ Partial Class MainControl
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         Controls.Add(Button1)
+        Controls.Add(Label5)
         Controls.Add(TripPanel)
         Controls.Add(EditTripBtn)
         Controls.Add(Label1)
@@ -200,5 +211,6 @@ Partial Class MainControl
     Friend WithEvents LocPanel As Panel
     Friend WithEvents EmptyLocLabel As Label
     Friend WithEvents EditLabel As Label
+    Friend WithEvents Label5 As Label
 
 End Class
