@@ -28,33 +28,35 @@ Partial Class TourPlanningTripsIcon
         LocLabel = New Label()
         Label3 = New Label()
         durationLabel = New Label()
+        Label1 = New Label()
         CType(ImgBox, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' NameLabel
         ' 
         NameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        NameLabel.Location = New Point(15, 0)
+        NameLabel.Location = New Point(3, 0)
         NameLabel.Name = "NameLabel"
-        NameLabel.Size = New Size(115, 22)
+        NameLabel.Size = New Size(136, 36)
         NameLabel.TabIndex = 0
         NameLabel.Text = "Name"
         NameLabel.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' ImgBox
         ' 
-        ImgBox.Location = New Point(15, 25)
+        ImgBox.Location = New Point(15, 39)
         ImgBox.Name = "ImgBox"
-        ImgBox.Size = New Size(115, 101)
+        ImgBox.Size = New Size(115, 87)
         ImgBox.TabIndex = 1
         ImgBox.TabStop = False
         ' 
         ' YearLabel
         ' 
+        YearLabel.AutoSize = True
         YearLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
-        YearLabel.Location = New Point(21, 129)
+        YearLabel.Location = New Point(68, 139)
         YearLabel.Name = "YearLabel"
-        YearLabel.Size = New Size(95, 23)
+        YearLabel.Size = New Size(27, 13)
         YearLabel.TabIndex = 2
         YearLabel.Text = "Year"
         YearLabel.TextAlign = ContentAlignment.MiddleCenter
@@ -89,11 +91,22 @@ Partial Class TourPlanningTripsIcon
         durationLabel.TabIndex = 5
         durationLabel.Text = "120"
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(40, 139)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(30, 13)
+        Label1.TabIndex = 6
+        Label1.Text = "Year:"
+        ' 
         ' TourPlanningTripsIcon
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BorderStyle = BorderStyle.FixedSingle
+        Controls.Add(Label1)
         Controls.Add(durationLabel)
         Controls.Add(Label3)
         Controls.Add(LocLabel)
@@ -113,5 +126,6 @@ Partial Class TourPlanningTripsIcon
     Friend WithEvents LocLabel As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents durationLabel As Label
+    Friend WithEvents Label1 As Label
 
 End Class

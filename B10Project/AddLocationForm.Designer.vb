@@ -29,6 +29,7 @@ Partial Class AddLocationForm
         LocationPanels = New Panel()
         Label2 = New Label()
         Label3 = New Label()
+        AddPresetBtn = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -72,7 +73,7 @@ Partial Class AddLocationForm
         LocationPanels.AutoScroll = True
         LocationPanels.Location = New Point(12, 95)
         LocationPanels.Name = "LocationPanels"
-        LocationPanels.Size = New Size(899, 479)
+        LocationPanels.Size = New Size(899, 444)
         LocationPanels.TabIndex = 7
         ' 
         ' Label2
@@ -94,10 +95,20 @@ Partial Class AddLocationForm
         Label3.TabIndex = 8
         Label3.Text = "Current Year: 2172"
         ' 
+        ' AddPresetBtn
+        ' 
+        AddPresetBtn.Location = New Point(12, 68)
+        AddPresetBtn.Name = "AddPresetBtn"
+        AddPresetBtn.Size = New Size(116, 23)
+        AddPresetBtn.TabIndex = 9
+        AddPresetBtn.Text = "Add Preset tour"
+        AddPresetBtn.UseVisualStyleBackColor = True
+        ' 
         ' AddLocationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(AddPresetBtn)
         Controls.Add(Label3)
         Controls.Add(FilterMenu)
         Controls.Add(LocationPanels)
@@ -118,5 +129,6 @@ Partial Class AddLocationForm
     Friend WithEvents LocationPanels As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents AddPresetBtn As Button
 
 End Class

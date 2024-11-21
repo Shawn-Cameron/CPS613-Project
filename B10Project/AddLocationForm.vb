@@ -179,4 +179,13 @@
         Return items
 
     End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles AddPresetBtn.Click
+        Form1.MainControl1.AddNewLocation(GetContentCardsData()(0), "10", "70")
+        Form1.MainControl1.AddNewLocation(GetContentCardsData()(2), "10", "60")
+        Form1.MainControl1.AddNewLocation(GetContentCardsData()(1), "10", "60")
+        Form1.MainControl1.AddNewLocation(GetContentCardsData()(3), "10", "60")
+        Form1.MainControl1.AddNewLocation(GetContentCardsData()(6), "10", "60")
+        Form1.SwitchForms()
+    End Sub
 End Class

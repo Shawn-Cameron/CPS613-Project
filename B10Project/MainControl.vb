@@ -3,6 +3,7 @@
     Dim editing As Boolean = False
 
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
+        EditTripBtn_Click(Nothing, EventArgs.Empty)
         Form1.SwitchForms()
     End Sub
 
