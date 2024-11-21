@@ -172,6 +172,11 @@
     Private Sub RemoveButtonClick(sender As Object, e As EventArgs)
         Dim clickedBtn As Button = DirectCast(sender, Button)
         locList.Remove(DirectCast(clickedBtn.Tag, List(Of Object)))
+
+        Dim stayTime As Integer = Integer.Parse(clickedBtn.Tag(1).GetDurationValue())
+        Dim travelTime As Integer = clickedBtn.Tag(0).GetTravelTime()
+        Dim curRemainTime As Integer = Integer.Parse(TimeRemainingLabel.Text)
+        TimeRemainingLabel.Text = (curRemainTime + stayTime + travelTime).ToString()
         PopulateLocations()
 
         If locList.Count = 0 Then
@@ -205,7 +210,7 @@
         Dim remainingTime As Integer = Integer.Parse(TimeRemainingLabel.Text)
         Dim stayTime As Integer = Integer.Parse(clickedBtn.Tag(1).GetDurationValue())
 
-        If (remainingTime - 10 > 0 And stayTime < 120) Then
+        If (remainingTime - 10 >= 0 And stayTime < 120) Then
             clickedBtn.Tag(1).SetDurationText((stayTime + 10).ToString())
             TimeRemainingLabel.Text = (remainingTime - 10).ToString()
         End If

@@ -14,4 +14,7 @@ Public Class TravelingArrow
         Me.BackColor = Color.Transparent
     End Sub
 
+    Public Function GetTravelTime()
+        Return Integer.Parse(TimeLabel.Text)
+    End Function
 End Class
