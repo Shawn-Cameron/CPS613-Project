@@ -10,4 +10,11 @@
         durationLabel.Text = stayTime.ToString()
     End Sub
 
+    Public Sub SetDurationText(value As Integer)
+        durationLabel.Text = value.ToString()
+    End Sub
+
+    Public Function GetDurationValue()
+        Return Integer.Parse(durationLabel.Text)
+    End Function
 End Class
