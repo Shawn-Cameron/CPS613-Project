@@ -30,6 +30,7 @@ Partial Class TravelingArrow
         ' 
         ' ImgBox
         ' 
+        'ImgBox.Image = B10.Resources.arrow
         ImgBox.Location = New Point(6, 18)
         ImgBox.Name = "ImgBox"
         ImgBox.Size = New Size(65, 24)

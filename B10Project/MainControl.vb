@@ -1,7 +1,7 @@
 ﻿Imports System.Net
 
 Public Class MainControl
-    Dim locList As New List(Of List(Of Object))
+    Dim cardList As New List(Of TourPlanningTripsIcon)
     Dim editing As Boolean = False
 
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
@@ -16,47 +16,9 @@ Public Class MainControl
 
         TimeRemainingLabel.Text = newRemainingTime.ToString()
 
-        Dim arrow As TravelingArrow = New TravelingArrow(timeToReach)
-        Dim card As TourPlanningTripsIcon = New TourPlanningTripsIcon(cardData, stayDur)
-        Dim removeCardBtn As Button = New Button()
-        Dim moveCardLeftBtm As Button = New Button()
-        Dim moveCardRightBtm As Button = New Button()
-        Dim addTimeBtn As Button = New Button()
-        Dim removeTimeBtn As Button = New Button()
+        Dim card As TourPlanningTripsIcon = New TourPlanningTripsIcon(cardData, timeToReach, stayDur)
 
-        'Add buttons to TourPlanningTripsIcon later
-        removeCardBtn.Text = "Remove"
-        moveCardLeftBtm.Text = "Move Left"
-        moveCardRightBtm.Text = "Move Right"
-        addTimeBtn.Text = "+10 Min"
-        removeTimeBtn.Text = "-10 Min"
-
-        moveCardLeftBtm.Size = New Size(moveCardLeftBtm.Size.Width + 10, moveCardLeftBtm.Size.Height)
-        moveCardRightBtm.Size = New Size(moveCardRightBtm.Size.Width + 10, moveCardRightBtm.Size.Height)
-        addTimeBtn.Size = New Size(addTimeBtn.Size.Width + 10, addTimeBtn.Size.Height)
-        removeTimeBtn.Size = New Size(removeTimeBtn.Size.Width + 10, removeTimeBtn.Size.Height)
-
-        AddHandler removeCardBtn.Click, AddressOf RemoveButtonClick
-        AddHandler moveCardLeftBtm.Click, AddressOf MoveCardLeft
-        AddHandler moveCardRightBtm.Click, AddressOf MoveCardRight
-        AddHandler addTimeBtn.Click, AddressOf AddTimeToLocation
-        AddHandler removeTimeBtn.Click, AddressOf RemoveTimeFromLocation
-
-        Dim collection As New List(Of Object) From {arrow, card, removeCardBtn, moveCardLeftBtm, moveCardRightBtm, addTimeBtn, removeTimeBtn}
-        removeCardBtn.Tag = collection
-        moveCardLeftBtm.Tag = collection
-        moveCardRightBtm.Tag = collection
-        addTimeBtn.Tag = collection
-        removeTimeBtn.Tag = collection
-
-        removeCardBtn.Visible = False
-        moveCardLeftBtm.Visible = False
-        moveCardRightBtm.Visible = False
-        addTimeBtn.Visible = False
-        removeTimeBtn.Visible = False
-
-        locList.Add(collection)
-
+        cardList.Add(card)
         PopulateLocations()
 
         EmptyLocLabel.Visible = False
@@ -65,57 +27,30 @@ Public Class MainControl
 
     Private Sub PopulateLocations()
         LocPanel.Controls.Clear()
+
+        If cardList.Count = 0 Then
+            LocPanel.Controls.Add(EmptyLocLabel)
+            EmptyLocLabel.Visible = True
+            Return
+        End If
+
         Dim xCoor As Integer = 0
-        Dim yCoor As Integer = 100
+        Dim yCoor As Integer = 0
 
+        For index As Integer = 0 To cardList.Count - 1
+            LocPanel.Controls.Add(cardList(index))
+            cardList(index).Location = New Point(xCoor, yCoor)
+            xCoor += 225
 
-        'For Each item In locList
-        For index As Integer = 0 To locList.Count - 1
-
-            LocPanel.Controls.Add(locList(index)(0))
-            LocPanel.Controls.Add(locList(index)(1))
-            LocPanel.Controls.Add(locList(index)(2))
-            LocPanel.Controls.Add(locList(index)(3))
-            LocPanel.Controls.Add(locList(index)(4))
-            LocPanel.Controls.Add(locList(index)(5))
-            LocPanel.Controls.Add(locList(index)(6))
-
-            locList(index)(0).Location = New Point(xCoor, yCoor)
-            xCoor += 80
-            yCoor -= 80
-
-            locList(index)(1).Location = New Point(xCoor, yCoor)
-
-            xCoor += 35
-            yCoor += 210
-            locList(index)(2).Location = New Point(xCoor, yCoor)
-
-            yCoor += 25
-            xCoor -= 50
-            locList(index)(3).Location = New Point(xCoor, yCoor)
-
-            yCoor += 25
-            locList(index)(6).Location = New Point(xCoor, yCoor)
-
-            xCoor += 85
-            locList(index)(5).Location = New Point(xCoor, yCoor)
-
-            yCoor -= 25
-            locList(index)(4).Location = New Point(xCoor, yCoor)
-
-            yCoor = 100
-            xCoor += 85
-
-
-            locList(index)(3).Enabled = True
-            locList(index)(4).Enabled = True
+            cardList(index).moveLeftBtn.Enabled = True
+            cardList(index).moveRightBtn.Enabled = True
 
             If index = 0 Then
-                locList(index)(3).Enabled = False
+                cardList(index).moveLeftBtn.Enabled = False
             End If
 
-            If index = locList.Count - 1 Then
-                locList(index)(4).Enabled = False
+            If index = cardList.Count - 1 Then
+                cardList(index).moveRightBtn.Enabled = False
             End If
         Next
 
@@ -124,14 +59,14 @@ Public Class MainControl
 
     Private Sub EditTripBtn_Click(sender As Object, e As EventArgs) Handles EditTripBtn.Click
 
-        If locList.Count = 0 And editing Then
+        If cardList.Count = 0 And editing Then
             EditLabel.Visible = False
             EditTripBtn.Text = "Edit Tour"
             editing = Not editing
             Return
         End If
 
-        If locList.Count = 0 Then
+        If cardList.Count = 0 Then
             Return
         End If
 
@@ -140,26 +75,23 @@ Public Class MainControl
         If editing Then
             EditLabel.Visible = True
             EditTripBtn.Text = "Finish Editing"
-            For Each item In locList
-                item(2).Visible = True
-                item(3).Visible = True
-                item(4).Visible = True
-                item(5).Visible = True
-                item(6).Visible = True
+            For Each item In cardList
+                item.EnableEdit()
 
             Next
         Else
             EditLabel.Visible = False
             EditTripBtn.Text = "Edit Tour"
-            For Each item In locList
-                item(2).Visible = False
-                item(3).Visible = False
-                item(4).Visible = False
-                item(5).Visible = False
-                item(6).Visible = False
+            For Each item In cardList
+                item.DisableEdit()
             Next
         End If
     End Sub
+
+    Private Sub EnableEditing()
+
+    End Sub
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim response
@@ -189,62 +121,31 @@ Public Class MainControl
         EditLabel.Visible = False
     End Sub
 
-    Private Sub RemoveButtonClick(sender As Object, e As EventArgs)
-        Dim clickedBtn As Button = DirectCast(sender, Button)
-        locList.Remove(DirectCast(clickedBtn.Tag, List(Of Object)))
 
-        Dim stayTime As Integer = Integer.Parse(clickedBtn.Tag(1).GetDurationValue())
-        Dim travelTime As Integer = clickedBtn.Tag(0).GetTravelTime()
-        Dim curRemainTime As Integer = Integer.Parse(TimeRemainingLabel.Text)
-        TimeRemainingLabel.Text = (curRemainTime + stayTime + travelTime).ToString()
-        PopulateLocations()
-
-        If locList.Count = 0 Then
-            LocPanel.Controls.Add(EmptyLocLabel)
-            EmptyLocLabel.Visible = True
-            EditTripBtn_Click(Nothing, EventArgs.Empty)
-        End If
+    Public Sub TimeRemoved()
+        TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) + 10).ToString()
     End Sub
 
-    Private Sub MoveCardLeft(sender As Object, e As EventArgs)
-        Dim clickedBtn As Button = DirectCast(sender, Button)
-        Dim index As Integer = locList.IndexOf(clickedBtn.Tag)
+    Public Sub TimeAdded()
+        TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) - 10).ToString()
+    End Sub
 
-        locList.Remove(DirectCast(clickedBtn.Tag, List(Of Object)))
-        locList.Insert(index - 1, clickedBtn.Tag)
+    Public Sub RemoveCard(card As TourPlanningTripsIcon)
+        cardList.Remove(card)
         PopulateLocations()
     End Sub
 
-    Private Sub MoveCardRight(sender As Object, e As EventArgs)
-        Dim clickedBtn As Button = DirectCast(sender, Button)
-        Dim index As Integer = locList.IndexOf(clickedBtn.Tag)
-
-        locList.Remove(DirectCast(clickedBtn.Tag, List(Of Object)))
-        locList.Insert(index + 1, clickedBtn.Tag)
+    Public Sub MoveCardLeft(card As TourPlanningTripsIcon)
+        Dim index As Integer = cardList.IndexOf(card)
+        cardList.Remove(card)
+        cardList.Insert(index - 1, card)
         PopulateLocations()
     End Sub
 
-    Private Sub AddTimeToLocation(sender As Object, e As EventArgs)
-
-        Dim clickedBtn As Button = DirectCast(sender, Button)
-        Dim remainingTime As Integer = Integer.Parse(TimeRemainingLabel.Text)
-        Dim stayTime As Integer = Integer.Parse(clickedBtn.Tag(1).GetDurationValue())
-
-        If (remainingTime - 10 >= 0 And stayTime < 120) Then
-            clickedBtn.Tag(1).SetDurationText((stayTime + 10).ToString())
-            TimeRemainingLabel.Text = (remainingTime - 10).ToString()
-        End If
-
-    End Sub
-
-    Private Sub RemoveTimeFromLocation(sender As Object, e As EventArgs)
-        Dim clickedBtn As Button = DirectCast(sender, Button)
-        Dim remainingTime As Integer = Integer.Parse(TimeRemainingLabel.Text)
-        Dim stayTime As Integer = Integer.Parse(clickedBtn.Tag(1).GetDurationValue())
-
-        If (remainingTime + 10 < 360 And stayTime > 30) Then
-            clickedBtn.Tag(1).SetDurationText((stayTime - 10).ToString())
-            TimeRemainingLabel.Text = (remainingTime + 10).ToString()
-        End If
+    Public Sub MoveCardRight(card As TourPlanningTripsIcon)
+        Dim index As Integer = cardList.IndexOf(card)
+        cardList.Remove(card)
+        cardList.Insert(index + 1, card)
+        PopulateLocations()
     End Sub
 End Class
