@@ -1,5 +1,7 @@
 ﻿Public Class Form1
     Public Shared locations As New List(Of String)
+    Public Shared years As New List(Of Integer)
+    Public Shared ind As Integer = 0
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs)
 
     End Sub

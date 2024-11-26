@@ -5,7 +5,9 @@
         ImgBox.SizeMode = PictureBoxSizeMode.Zoom
 
         NameLabel.Text = cardData("title")
+        Form1.locations.Add(cardData("title"))
         YearLabel.Text = cardData("year")
+        Form1.years.Add(cardData("year"))
         LocLabel.Text = cardData("location")
         durationLabel.Text = stayTime.ToString()
         CardPanel.Size = New Size(148, 193)
@@ -54,6 +56,8 @@
 
     Private Sub removeBtn_Click(sender As Object, e As EventArgs) Handles removeBtn.Click
         Form1.MainControl1.RemoveCard(Me)
+        Form1.locations.Remove(Me.NameLabel.Text)
+        Form1.years.Remove(Me.YearLabel.Text)
     End Sub
 
     Private Sub moveLeftBtn_Click(sender As Object, e As EventArgs) Handles moveLeftBtn.Click

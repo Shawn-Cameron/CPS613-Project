@@ -52,3 +52,4 @@ C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windo
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10.pdb
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10.genruntimeconfig.cache
 C:\Users\shawn\Documents\School\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\ref\B10.dll
+C:\Users\samin\Documents\GitHub\CPS613-Project\B10Project\obj\Debug\net6.0-windows7.0\B10.Window.resources

@@ -143,10 +143,10 @@ Partial Class MainControl
         ' 
         ' Label5
         ' 
-        Label5.Font = New Font("Arial", 26.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(13, 43)
         Label5.Name = "Label5"
-        Label5.Size = New Size(903, 41)
+        Label5.Size = New Size(906, 41)
         Label5.TabIndex = 7
         Label5.TextAlign = ContentAlignment.TopCenter
         ' 
@@ -181,13 +181,13 @@ Partial Class MainControl
         ' 
         ' Button2
         ' 
-        Button2.Enabled = False
-        Button2.Location = New Point(665, 43)
+        Button2.Location = New Point(132, 120)
         Button2.Name = "Button2"
-        Button2.Size = New Size(231, 42)
+        Button2.Size = New Size(660, 42)
         Button2.TabIndex = 10
         Button2.Text = "Look Out The Window"
         Button2.UseVisualStyleBackColor = True
+        Button2.Visible = False
         ' 
         ' MainControl
         ' 

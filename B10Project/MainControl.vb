@@ -98,7 +98,8 @@ Public Class MainControl
             response = MsgBox("You have enough time remaining to either extend one of your trips or add another location. Would you still like to confirm?", vbYesNo, "Proceed?")
             If response = vbYes Then
                 Pilot.Button1.Enabled = True
-                Pilot.Label1.Text = "The trip has been confirmed"
+                Pilot.Label7.Text = "The trip has been confirmed"
+                Pilot.Label1.Text = "Setting Course for " & Form1.locations(Form1.ind)
                 AddLocBtn.Enabled = False
                 EditTripBtn.Enabled = False
                 Button1.Enabled = False
@@ -107,7 +108,8 @@ Public Class MainControl
             End If
         Else
             Pilot.Button1.Enabled = True
-            Pilot.Label1.Text = "The trip has been confirmed"
+            Pilot.Label7.Text = "The trip has been confirmed"
+            Pilot.Label1.Text = "Setting Course for " & Form1.locations(Form1.ind)
             AddLocBtn.Enabled = False
             EditTripBtn.Enabled = False
             Button1.Enabled = False
@@ -146,5 +148,9 @@ Public Class MainControl
         cardList.Remove(card)
         cardList.Insert(index + 1, card)
         PopulateLocations()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Window.Show()
     End Sub
 End Class
