@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         MainControl1 = New MainControl()
         AddLocationForm1 = New AddLocationForm()
+        MsgToggle = New Button()
+        MessageControl1 = New MessageControl()
         SuspendLayout()
         ' 
         ' MainControl1
@@ -41,11 +43,29 @@ Partial Class Form1
         AddLocationForm1.Size = New Size(931, 518)
         AddLocationForm1.TabIndex = 3
         ' 
+        ' MsgToggle
+        ' 
+        MsgToggle.Location = New Point(856, 545)
+        MsgToggle.Name = "MsgToggle"
+        MsgToggle.Size = New Size(75, 51)
+        MsgToggle.TabIndex = 1
+        MsgToggle.Text = "Show Messages"
+        MsgToggle.UseVisualStyleBackColor = True
+        ' 
+        ' MessageControl1
+        ' 
+        MessageControl1.Location = New Point(986, 10)
+        MessageControl1.Name = "MessageControl1"
+        MessageControl1.Size = New Size(350, 586)
+        MessageControl1.TabIndex = 4
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(968, 608)
+        ClientSize = New Size(1348, 608)
+        Controls.Add(MessageControl1)
+        Controls.Add(MsgToggle)
         Controls.Add(MainControl1)
         Controls.Add(AddLocationForm1)
         Name = "Form1"
@@ -55,5 +75,7 @@ Partial Class Form1
 
     Friend WithEvents MainControl1 As MainControl
     Friend WithEvents AddLocationForm1 As AddLocationForm
+    Friend WithEvents MsgToggle As Button
+    Friend WithEvents MessageControl1 As MessageControl
 
 End Class

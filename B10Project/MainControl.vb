@@ -120,6 +120,7 @@ Public Class MainControl
 
     Private Sub MainControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         EditLabel.Visible = False
+
     End Sub
 
 
