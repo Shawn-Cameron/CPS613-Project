@@ -36,12 +36,14 @@ Partial Class MainControl
         EditTripBtn = New Button()
         Label1 = New Label()
         AddLocBtn = New Button()
+        Button2 = New Button()
         TripPanel.SuspendLayout()
         LocPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
         ' 
+        Button1.Enabled = False
         Button1.Location = New Point(610, 117)
         Button1.Name = "Button1"
         Button1.Size = New Size(182, 48)
@@ -177,11 +179,22 @@ Partial Class MainControl
         AddLocBtn.Text = "Add Location"
         AddLocBtn.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Enabled = False
+        Button2.Location = New Point(665, 43)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(231, 42)
+        Button2.TabIndex = 10
+        Button2.Text = "Look Out The Window"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' MainControl
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(TripPanel)
         Controls.Add(EditTripBtn)
@@ -212,5 +225,6 @@ Partial Class MainControl
     Friend WithEvents EmptyLocLabel As Label
     Friend WithEvents EditLabel As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Button2 As Button
 
 End Class

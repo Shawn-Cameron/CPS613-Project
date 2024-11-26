@@ -11,6 +11,7 @@
         LocImage.SizeMode = PictureBoxSizeMode.Zoom
 
         TitleLabel.Text = data("title")
+        Form1.locations.Add(data("title"))
         DesLabel.Text = data("description")
         LocLabel.Text = data("location")
         YearLabel.Text = data("year")
