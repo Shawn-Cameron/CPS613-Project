@@ -1,4 +1,6 @@
-﻿Public Class Pilot
+﻿Imports System.Reflection.Emit
+
+Public Class Pilot
     Dim ticks As Integer = 10
     Dim interval As Integer = 60000
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -20,6 +22,9 @@
             Label1.Text = "Flying Autopilot"
             Label2.Text = "Reaching Destination in:       minutes"
             Label3.Text = "10"
+            Label5.Text = "Flying at        ly/min"
+            Label4.Text = "1"
+            Label7.Text = "Flying To " & Form1.locations(0)
             Button1.Text = "Disengage Autopilot"
             Button2.Visible = True
             Button3.Visible = True
@@ -41,11 +46,15 @@
             Label1.Text = "Destination Reached!!!"
             Label2.Visible = False
             Label3.Visible = False
+            Label4.Visible = False
+            Label5.Text = "At " & Form1.locations(0)
+            Label7.Visible = False
             Button1.Visible = False
             Button2.Visible = False
             Button3.Visible = False
             Button4.Visible = False
-
+            Button6.Visible = True
+            Button7.Visible = True
         End If
     End Sub
 
@@ -55,6 +64,8 @@
             Timer1.Enabled = False
             Label2.ForeColor = Color.DarkGray
             Label3.ForeColor = Color.DarkGray
+            Label4.ForeColor = Color.DarkGray
+            Label5.ForeColor = Color.DarkGray
             Label1.Text = "Engine Stopped"
             Button1.Text = "Disengage Autopilot"
             Button1.Enabled = False
@@ -65,6 +76,8 @@
             Timer1.Enabled = True
             Label2.ForeColor = Color.Black
             Label3.ForeColor = Color.Black
+            Label4.ForeColor = Color.Black
+            Label5.ForeColor = Color.Black
             Label1.Text = "Flying Autopilot"
             Button1.Text = "Disengage Autopilot"
             Button1.Enabled = True
@@ -74,9 +87,11 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         interval -= 6000
         Button2.Enabled = True
+        Dim speed As Integer = Integer.Parse(Label4.Text)
         If ((interval * ticks) / 60000) > 0 Then
             Timer1.Interval = interval
             Label3.Text = ((interval * ticks) / 60000).ToString()
+            Label4.Text = (speed + 1).ToString()
         Else
             interval += 6000
             Button3.Enabled = False
@@ -86,9 +101,11 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         interval += 6000
         Button3.Enabled = True
+        Dim speed As Integer = Integer.Parse(Label4.Text)
         If ((interval * ticks) / 60000) < 10 Then
             Timer1.Interval = interval
             Label3.Text = ((interval * ticks) / 60000).ToString()
+            Label4.Text = (speed - 1).ToString()
         Else
             interval -= 6000
             Button2.Enabled = False
@@ -106,10 +123,24 @@
         Me.BackColor = Color.Red
         Label2.Visible = False
         Label3.Visible = False
+        Label4.Visible = False
+        Label5.Visible = False
         Button1.Visible = False
         Button2.Visible = False
         Button3.Visible = False
         Button4.Visible = False
         Button5.Visible = False
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Window.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Window.Close()
+        Me.Close()
+        My.Computer.Audio.Stop()
+        Form1.MainControl1.Button1_Click(Nothing, EventArgs.Empty)
     End Sub
 End Class

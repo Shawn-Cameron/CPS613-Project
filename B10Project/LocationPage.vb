@@ -83,6 +83,7 @@ Public Class LocationPage
     End Sub
 
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
+        Form1.MainControl1.Button1.Enabled = True
         Form1.MainControl1.AddNewLocation(_cardData.myData, _timeToReach, currentTime)
         Form1.SwitchForms()
         Me.Close()

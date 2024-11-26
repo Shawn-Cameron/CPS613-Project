@@ -161,10 +161,10 @@ Public Class MainControl
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim response
         If Integer.Parse(TimeRemainingLabel.Text) >= 10 Then
-            response = MsgBox("You have enough time remaining to either extend one of your trips or add another location. Would you still like to continue?", vbYesNo, "Proceed?")
+            response = MsgBox("You have enough time remaining to either extend one of your trips or add another location. Would you still like to confirm?", vbYesNo, "Proceed?")
             If response = vbYes Then
                 Pilot.Button1.Enabled = True
                 Pilot.Label1.Text = "The trip has been confirmed"

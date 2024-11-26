@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+    Public Shared locations As New List(Of String)
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs)
 
     End Sub
