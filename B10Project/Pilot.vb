@@ -4,6 +4,7 @@ Public Class Pilot
     Dim curYear As Integer = 2173
     Dim forward As Boolean = True
     Dim ticks As Integer = 1
+    Dim MsgShowing As Boolean = False
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Button1.Text = "Disengage Autopilot" Then
             Label1.Text = "Flying Manual"
@@ -226,5 +227,24 @@ Public Class Pilot
         Form1.years.Clear()
         Form1.years.Add("2173")
         ResetForm()
+    End Sub
+
+    Private Sub Pilot_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Me.Size = New Size(1016, 627)
+        AddHandler MessageControl1.SendBtnClicked, AddressOf MsgSent
+    End Sub
+
+    Private Sub MsgToggle_Click(sender As Object, e As EventArgs) Handles MsgToggle.Click
+        MsgShowing = Not MsgShowing
+        If MsgShowing Then
+            Me.Size = New Size(1412, 627)
+        Else
+            Me.Size = New Size(1016, 627)
+        End If
+    End Sub
+
+    Private Sub MsgSent()
+        MessageControl1.AddMsg("Pilot", MessageControl1.MsgText.Text)
+        Form1.MessageControl1.AddMsg("Pilot", MessageControl1.MsgText.Text)
     End Sub
 End Class

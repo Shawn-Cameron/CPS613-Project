@@ -23,6 +23,7 @@
 
     Private Sub MainControl1_Load(sender As Object, e As EventArgs) Handles MainControl1.Load
         Pilot.Show()
+        AddHandler MessageControl1.SendBtnClicked, AddressOf MsgSent
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -36,5 +37,10 @@
         Else
             Me.Size = New Size(984, 647)
         End If
+    End Sub
+
+    Private Sub MsgSent()
+        MessageControl1.AddMsg("Visitor 1", MessageControl1.MsgText.Text)
+        Pilot.MessageControl1.AddMsg("Visitor 1", MessageControl1.MsgText.Text)
     End Sub
 End Class

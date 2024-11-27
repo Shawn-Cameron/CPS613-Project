@@ -41,6 +41,8 @@ Partial Class Pilot
         Button10 = New Button()
         Label3 = New Label()
         Label6 = New Label()
+        MsgToggle = New Button()
+        MessageControl1 = New MessageControl()
         SuspendLayout()
         ' 
         ' Label1
@@ -56,7 +58,7 @@ Partial Class Pilot
         ' Button1
         ' 
         Button1.Enabled = False
-        Button1.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button1.Location = New Point(352, 342)
         Button1.Name = "Button1"
         Button1.Size = New Size(297, 66)
@@ -80,7 +82,7 @@ Partial Class Pilot
         ' Button2
         ' 
         Button2.Enabled = False
-        Button2.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button2.Location = New Point(12, 342)
         Button2.Name = "Button2"
         Button2.Size = New Size(297, 66)
@@ -92,7 +94,7 @@ Partial Class Pilot
         ' Button3
         ' 
         Button3.Enabled = False
-        Button3.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.Location = New Point(691, 342)
         Button3.Name = "Button3"
         Button3.Size = New Size(297, 66)
@@ -103,7 +105,7 @@ Partial Class Pilot
         ' 
         ' Button4
         ' 
-        Button4.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button4.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button4.Location = New Point(352, 453)
         Button4.Name = "Button4"
         Button4.Size = New Size(297, 66)
@@ -114,7 +116,7 @@ Partial Class Pilot
         ' 
         ' Button5
         ' 
-        Button5.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button5.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button5.Location = New Point(352, 24)
         Button5.Name = "Button5"
         Button5.Size = New Size(297, 66)
@@ -152,7 +154,7 @@ Partial Class Pilot
         ' 
         ' Button6
         ' 
-        Button6.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button6.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button6.Location = New Point(352, 453)
         Button6.Name = "Button6"
         Button6.Size = New Size(297, 66)
@@ -163,7 +165,7 @@ Partial Class Pilot
         ' 
         ' Button7
         ' 
-        Button7.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button7.Location = New Point(691, 453)
         Button7.Name = "Button7"
         Button7.Size = New Size(297, 66)
@@ -174,7 +176,7 @@ Partial Class Pilot
         ' 
         ' Button8
         ' 
-        Button8.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button8.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button8.Location = New Point(12, 453)
         Button8.Name = "Button8"
         Button8.Size = New Size(297, 66)
@@ -185,7 +187,7 @@ Partial Class Pilot
         ' 
         ' Button9
         ' 
-        Button9.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button9.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button9.Location = New Point(12, 24)
         Button9.Name = "Button9"
         Button9.Size = New Size(297, 66)
@@ -196,7 +198,7 @@ Partial Class Pilot
         ' 
         ' Button10
         ' 
-        Button10.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button10.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Button10.Location = New Point(691, 24)
         Button10.Name = "Button10"
         Button10.Size = New Size(297, 66)
@@ -223,11 +225,30 @@ Partial Class Pilot
         Label6.TabIndex = 17
         Label6.TextAlign = ContentAlignment.TopCenter
         ' 
+        ' MsgToggle
+        ' 
+        MsgToggle.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        MsgToggle.Location = New Point(880, 525)
+        MsgToggle.Name = "MsgToggle"
+        MsgToggle.Size = New Size(108, 60)
+        MsgToggle.TabIndex = 18
+        MsgToggle.Text = "Show Messages"
+        MsgToggle.UseVisualStyleBackColor = True
+        ' 
+        ' MessageControl1
+        ' 
+        MessageControl1.Location = New Point(1047, -1)
+        MessageControl1.Name = "MessageControl1"
+        MessageControl1.Size = New Size(350, 586)
+        MessageControl1.TabIndex = 19
+        ' 
         ' Pilot
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1000, 577)
+        ClientSize = New Size(1396, 588)
+        Controls.Add(MessageControl1)
+        Controls.Add(MsgToggle)
         Controls.Add(Label6)
         Controls.Add(Label3)
         Controls.Add(Button10)
@@ -268,4 +289,6 @@ Partial Class Pilot
     Friend WithEvents Button10 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents MsgToggle As Button
+    Friend WithEvents MessageControl1 As MessageControl
 End Class

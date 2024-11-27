@@ -1,10 +1,12 @@
 ﻿Public Class MessageControl
     Private msgXCoor As Integer = 10
     Private msgYCoor As Integer = 5
+    Public Event SendBtnClicked()
 
     Private Sub SendBtn_Click(sender As Object, e As EventArgs) Handles SendBtn.Click
-        AddMsg("Visitor 1", MsgText.Text)
-        MsgText.Text = ""
+        'AddMsg("Visitor 1", MsgText.Text)
+        'MsgText.Text = ""
+        RaiseEvent SendBtnClicked()
     End Sub
 
     Private Sub MessageControl_Load(sender As Object, e As EventArgs) Handles Me.Load
