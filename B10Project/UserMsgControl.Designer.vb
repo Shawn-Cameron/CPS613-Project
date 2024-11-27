@@ -39,9 +39,10 @@ Partial Class UserMsgControl
         ' SenderLabel
         ' 
         SenderLabel.AutoSize = True
+        SenderLabel.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         SenderLabel.Location = New Point(4, 2)
         SenderLabel.Name = "SenderLabel"
-        SenderLabel.Size = New Size(43, 15)
+        SenderLabel.Size = New Size(47, 15)
         SenderLabel.TabIndex = 1
         SenderLabel.Text = "Sender"
         ' 

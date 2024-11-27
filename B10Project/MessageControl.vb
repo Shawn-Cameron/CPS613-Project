@@ -1,12 +1,15 @@
 ﻿Public Class MessageControl
     Private msgXCoor As Integer = 10
     Private msgYCoor As Integer = 5
-    Public Event SendBtnClicked()
+    Public Event SendBtnClicked(msg As String)
 
     Private Sub SendBtn_Click(sender As Object, e As EventArgs) Handles SendBtn.Click
         'AddMsg("Visitor 1", MsgText.Text)
         'MsgText.Text = ""
-        RaiseEvent SendBtnClicked()
+        If Not String.IsNullOrWhiteSpace(MsgText.Text) Then
+            RaiseEvent SendBtnClicked(MsgText.Text)
+        End If
+
     End Sub
 
     Private Sub MessageControl_Load(sender As Object, e As EventArgs) Handles Me.Load
