@@ -51,6 +51,12 @@ Partial Class LocationPage
         TimeToReachLabel = New Label()
         Label1 = New Label()
         MediaPlayer = New AxWMPLib.AxWindowsMediaPlayer()
+        PlayPauseBtn = New RoundButton()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        RewindBtn = New RoundButton()
+        FastFwrdBtn = New RoundButton()
+        RestartBtn = New RoundButton()
+        PlaySpeedBtn = New RoundButton()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         GroupBox5.SuspendLayout()
@@ -361,11 +367,94 @@ Partial Class LocationPage
         MediaPlayer.Size = New Size(613, 277)
         MediaPlayer.TabIndex = 17
         ' 
+        ' PlayPauseBtn
+        ' 
+        PlayPauseBtn.BackColor = SystemColors.ActiveBorder
+        PlayPauseBtn.FlatAppearance.BorderSize = 0
+        PlayPauseBtn.FlatStyle = FlatStyle.Flat
+        PlayPauseBtn.Font = New Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        PlayPauseBtn.Location = New Point(129, 248)
+        PlayPauseBtn.Name = "PlayPauseBtn"
+        PlayPauseBtn.Size = New Size(38, 38)
+        PlayPauseBtn.TabIndex = 18
+        PlayPauseBtn.Text = "||"
+        PlayPauseBtn.UseVisualStyleBackColor = False
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
+        ' 
+        ' RewindBtn
+        ' 
+        RewindBtn.BackColor = SystemColors.ActiveBorder
+        RewindBtn.FlatAppearance.BorderSize = 0
+        RewindBtn.FlatStyle = FlatStyle.Flat
+        RewindBtn.Font = New Font("Arial Narrow", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        RewindBtn.Location = New Point(88, 248)
+        RewindBtn.Margin = New Padding(0)
+        RewindBtn.Name = "RewindBtn"
+        RewindBtn.Size = New Size(38, 38)
+        RewindBtn.TabIndex = 20
+        RewindBtn.Text = "◄◄"
+        RewindBtn.UseVisualStyleBackColor = False
+        ' 
+        ' FastFwrdBtn
+        ' 
+        FastFwrdBtn.BackColor = SystemColors.ActiveBorder
+        FastFwrdBtn.FlatAppearance.BorderSize = 0
+        FastFwrdBtn.FlatStyle = FlatStyle.Flat
+        FastFwrdBtn.Font = New Font("Arial Narrow", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        FastFwrdBtn.Location = New Point(170, 248)
+        FastFwrdBtn.Margin = New Padding(0)
+        FastFwrdBtn.Name = "FastFwrdBtn"
+        FastFwrdBtn.Size = New Size(38, 38)
+        FastFwrdBtn.TabIndex = 21
+        FastFwrdBtn.Text = "►►"
+        FastFwrdBtn.UseVisualStyleBackColor = False
+        ' 
+        ' RestartBtn
+        ' 
+        RestartBtn.BackColor = SystemColors.ActiveBorder
+        RestartBtn.FlatAppearance.BorderSize = 0
+        RestartBtn.FlatStyle = FlatStyle.Flat
+        RestartBtn.Font = New Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        RestartBtn.Location = New Point(18, 248)
+        RestartBtn.Margin = New Padding(0)
+        RestartBtn.Name = "RestartBtn"
+        RestartBtn.Size = New Size(38, 38)
+        RestartBtn.TabIndex = 22
+        RestartBtn.Text = "l◄"
+        RestartBtn.UseVisualStyleBackColor = False
+        ' 
+        ' PlaySpeedBtn
+        ' 
+        PlaySpeedBtn.BackColor = SystemColors.ActiveBorder
+        PlaySpeedBtn.FlatAppearance.BorderSize = 0
+        PlaySpeedBtn.FlatStyle = FlatStyle.Flat
+        PlaySpeedBtn.Font = New Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        PlaySpeedBtn.Location = New Point(565, 245)
+        PlaySpeedBtn.Name = "PlaySpeedBtn"
+        PlaySpeedBtn.Size = New Size(38, 38)
+        PlaySpeedBtn.TabIndex = 23
+        PlaySpeedBtn.Text = "x1"
+        PlaySpeedBtn.UseVisualStyleBackColor = False
+        ' 
         ' LocationPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(917, 588)
+        Controls.Add(PlaySpeedBtn)
+        Controls.Add(RestartBtn)
+        Controls.Add(FastFwrdBtn)
+        Controls.Add(RewindBtn)
+        Controls.Add(PlayPauseBtn)
         Controls.Add(Label1)
         Controls.Add(TimeToReachLabel)
         Controls.Add(Label12)
@@ -426,4 +515,10 @@ Partial Class LocationPage
     Friend WithEvents TimeToReachLabel As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents MediaPlayer As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents PlayPauseBtn As RoundButton
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents RewindBtn As RoundButton
+    Friend WithEvents FastFwrdBtn As RoundButton
+    Friend WithEvents RestartBtn As RoundButton
+    Friend WithEvents PlaySpeedBtn As RoundButton
 End Class
