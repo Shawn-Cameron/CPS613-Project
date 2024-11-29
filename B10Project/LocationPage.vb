@@ -31,7 +31,7 @@ Public Class LocationPage
         If currentIndex < 0 Then
             currentIndex = imagePaths.Count - 1
         End If
-        PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
+        showImgOrVid()
     End Sub
 
     Private Sub RoundButton2_Click(sender As Object, e As EventArgs) Handles RoundButton2.Click
@@ -41,24 +41,24 @@ Public Class LocationPage
         If currentIndex >= imagePaths.Count Then
             currentIndex = 0
         End If
-        PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
+        showImgOrVid()
+    End Sub
+
+    Private Sub showImgOrVid()
+        If imagePaths(currentIndex).EndsWith(".mp4", StringComparison.OrdinalIgnoreCase) Then
+            MediaPlayer.Visible = True
+            MediaPlayer.URL = imagePaths(currentIndex)
+            MediaPlayer.Ctlcontrols.play()
+        Else
+            MediaPlayer.Ctlcontrols.stop()
+            MediaPlayer.Visible = False
+            PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
+        End If
+
     End Sub
 
     Private Sub LocationPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim folderPath As String = Path.Combine(Application.StartupPath, "Resources") ' Change the path as needed
-
-        'If Directory.Exists(folderPath) Then
-        '   imagePaths = Directory.GetFiles(folderPath, "*.jpg").ToList() ' Change "*.jpg" to the appropriate format, e.g., "*.png"
-        '    imagePaths.AddRange(Directory.GetFiles(folderPath, "*.png"))
-
-        '  If imagePaths.Count > 0 Then
-        '        PictureBox1.Image = Image.FromFile(imagePaths(currentIndex))
-        '   Else
-        '        MessageBox.Show("No images found in the folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        '            End If
-        ' Else
-        '    MessageBox.Show("Image folder not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        '    End If
+        MediaPlayer.Visible = False
 
         currentTime = Integer.Parse(timeLabel.Text)
     End Sub

@@ -50,6 +50,7 @@ Partial Class LocationPage
         Label12 = New Label()
         TimeToReachLabel = New Label()
         Label1 = New Label()
+        MediaPlayer = New AxWMPLib.AxWindowsMediaPlayer()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         GroupBox5.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class LocationPage
         GroupBox3.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
+        CType(MediaPlayer, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -350,6 +352,15 @@ Partial Class LocationPage
         Label1.TabIndex = 16
         Label1.Text = "minutes"
         ' 
+        ' MediaPlayer
+        ' 
+        MediaPlayer.Enabled = True
+        MediaPlayer.Location = New Point(12, 12)
+        MediaPlayer.Name = "MediaPlayer"
+        MediaPlayer.OcxState = CType(resources.GetObject("MediaPlayer.OcxState"), AxHost.State)
+        MediaPlayer.Size = New Size(613, 277)
+        MediaPlayer.TabIndex = 17
+        ' 
         ' LocationPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -371,6 +382,7 @@ Partial Class LocationPage
         Controls.Add(Label2)
         Controls.Add(Panel1)
         Controls.Add(DescripLabel)
+        Controls.Add(MediaPlayer)
         Controls.Add(PictureBox1)
         Name = "LocationPage"
         Text = "LocationPage"
@@ -381,6 +393,7 @@ Partial Class LocationPage
         GroupBox3.ResumeLayout(False)
         GroupBox2.ResumeLayout(False)
         GroupBox1.ResumeLayout(False)
+        CType(MediaPlayer, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -412,4 +425,5 @@ Partial Class LocationPage
     Friend WithEvents Label12 As Label
     Friend WithEvents TimeToReachLabel As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents MediaPlayer As AxWMPLib.AxWindowsMediaPlayer
 End Class
