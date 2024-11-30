@@ -116,6 +116,9 @@ Public Class MainControl
             Label5.Text = "Waiting on Pilot"
             Label5.BringToFront()
         End If
+        Label7.Visible = True
+        TimeElapsedLabel.Visible = True
+        TimeRemainingLabel.Text = (360 - Integer.Parse(TimeRemainingLabel.Text)).ToString()
     End Sub
 
     Private Sub MainControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -153,5 +156,10 @@ Public Class MainControl
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Window.Show()
+    End Sub
+
+    Public Sub TimerTicked()
+        TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) - 1).ToString()
+        TimeElapsedLabel.Text = (Integer.Parse(TimeElapsedLabel.Text) + 1).ToString()
     End Sub
 End Class

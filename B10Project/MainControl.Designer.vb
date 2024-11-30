@@ -24,6 +24,8 @@ Partial Class MainControl
     Private Sub InitializeComponent()
         Button1 = New Button()
         TripPanel = New Panel()
+        TimeElapsedLabel = New Label()
+        Label7 = New Label()
         EditLabel = New Label()
         LocPanel = New Panel()
         EmptyLocLabel = New Label()
@@ -53,6 +55,8 @@ Partial Class MainControl
         ' 
         ' TripPanel
         ' 
+        TripPanel.Controls.Add(TimeElapsedLabel)
+        TripPanel.Controls.Add(Label7)
         TripPanel.Controls.Add(EditLabel)
         TripPanel.Controls.Add(LocPanel)
         TripPanel.Controls.Add(TimeRemainingLabel)
@@ -64,6 +68,26 @@ Partial Class MainControl
         TripPanel.Name = "TripPanel"
         TripPanel.Size = New Size(906, 381)
         TripPanel.TabIndex = 8
+        ' 
+        ' TimeElapsedLabel
+        ' 
+        TimeElapsedLabel.AutoSize = True
+        TimeElapsedLabel.Location = New Point(858, 26)
+        TimeElapsedLabel.Name = "TimeElapsedLabel"
+        TimeElapsedLabel.Size = New Size(13, 15)
+        TimeElapsedLabel.TabIndex = 9
+        TimeElapsedLabel.Text = "0"
+        TimeElapsedLabel.Visible = False
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(748, 26)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(112, 15)
+        Label7.TabIndex = 8
+        Label7.Text = "Time Elasped (Min):"
+        Label7.Visible = False
         ' 
         ' EditLabel
         ' 
@@ -109,7 +133,7 @@ Partial Class MainControl
         Label4.AutoSize = True
         Label4.Location = New Point(731, 11)
         Label4.Name = "Label4"
-        Label4.Size = New Size(131, 15)
+        Label4.Size = New Size(132, 15)
         Label4.TabIndex = 3
         Label4.Text = "Time Remaining (Min): "
         ' 
@@ -181,7 +205,7 @@ Partial Class MainControl
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(132, 120)
+        Button2.Location = New Point(132, 106)
         Button2.Name = "Button2"
         Button2.Size = New Size(660, 42)
         Button2.TabIndex = 10
@@ -226,5 +250,7 @@ Partial Class MainControl
     Friend WithEvents EditLabel As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents TimeElapsedLabel As Label
+    Friend WithEvents Label7 As Label
 
 End Class

@@ -98,6 +98,7 @@ Public Class Pilot
             Button10.Visible = False
         End If
         Label6.Text = "Target Year: " & Integer.Parse(Form1.years(Form1.ind))
+        Form1.MainControl1.TimerTicked()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
