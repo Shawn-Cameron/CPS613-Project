@@ -3,20 +3,21 @@
     Private msgYCoor As Integer = 5
     Public Event SendBtnClicked(msg As String)
 
+    'Send the messages when text is entered
     Private Sub SendBtn_Click(sender As Object, e As EventArgs) Handles SendBtn.Click
-        'AddMsg("Visitor 1", MsgText.Text)
-        'MsgText.Text = ""
         If Not String.IsNullOrWhiteSpace(MsgText.Text) Then
             RaiseEvent SendBtnClicked(MsgText.Text)
         End If
 
     End Sub
 
+    'Startup code for Message control
     Private Sub MessageControl_Load(sender As Object, e As EventArgs) Handles Me.Load
         MsgPanel.VerticalScroll.Value = MsgPanel.VerticalScroll.Maximum
         MsgPanel.Controls.Clear()
     End Sub
 
+    'Adds a new message to the message control
     Public Sub AddMsg(sender As String, msg As String)
         Dim sentMsg As UserMsgControl = New UserMsgControl(sender, msg)
 

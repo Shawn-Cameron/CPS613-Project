@@ -4,10 +4,13 @@ Public Class MainControl
     Dim cardList As New List(Of TourPlanningTripsIcon)
     Dim editing As Boolean = False
 
+    'Switches the display to show the AddLocationForm User control
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
         Form1.SwitchForms()
     End Sub
 
+
+    'Adds a new trip to the to the tour planning screen
     Public Sub AddNewLocation(cardData As Dictionary(Of String, String), timeToReach As String, stayDur As String)
         Dim newRemainingTime As Integer = Integer.Parse(TimeRemainingLabel.Text) - Integer.Parse(timeToReach) - Integer.Parse(stayDur)
         If (newRemainingTime < 0) Then
@@ -25,6 +28,7 @@ Public Class MainControl
 
     End Sub
 
+    'Updates the current locations in the tour planning screen. Called each time when changes are made
     Private Sub PopulateLocations()
         LocPanel.Controls.Clear()
 
@@ -57,6 +61,7 @@ Public Class MainControl
 
     End Sub
 
+    'Toggles editing mode for the trips
     Private Sub EditTripBtn_Click(sender As Object, e As EventArgs) Handles EditTripBtn.Click
 
         If cardList.Count = 0 And editing Then
@@ -88,10 +93,7 @@ Public Class MainControl
         End If
     End Sub
 
-    Private Sub EnableEditing()
-
-    End Sub
-
+    'Allows users to confirm trip and sends the current trip to the pilot 
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim response
         If Integer.Parse(TimeRemainingLabel.Text) >= 10 Then
@@ -121,25 +123,29 @@ Public Class MainControl
         TimeRemainingLabel.Text = (360 - Integer.Parse(TimeRemainingLabel.Text)).ToString()
     End Sub
 
+
     Private Sub MainControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         EditLabel.Visible = False
 
     End Sub
 
-
+    'Updates the remaining time for the trip 
     Public Sub TimeRemoved()
         TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) + 10).ToString()
     End Sub
 
+    'Updates the remaining time for the trip
     Public Sub TimeAdded()
         TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) - 10).ToString()
     End Sub
 
+    'Removes a card from the list an updates the trips
     Public Sub RemoveCard(card As TourPlanningTripsIcon)
         cardList.Remove(card)
         PopulateLocations()
     End Sub
 
+    'Switches the selected card location with the one on the left
     Public Sub MoveCardLeft(card As TourPlanningTripsIcon)
         Dim index As Integer = cardList.IndexOf(card)
         cardList.Remove(card)
@@ -147,6 +153,7 @@ Public Class MainControl
         PopulateLocations()
     End Sub
 
+    'Switches the selected card location with the one on the right
     Public Sub MoveCardRight(card As TourPlanningTripsIcon)
         Dim index As Integer = cardList.IndexOf(card)
         cardList.Remove(card)
@@ -158,6 +165,7 @@ Public Class MainControl
         Window.Show()
     End Sub
 
+    'Used when Trip is confirmed. Updates the time remaining and time elasped to show visitors how much time is left for the trip
     Public Sub TimerTicked()
         TimeRemainingLabel.Text = (Integer.Parse(TimeRemainingLabel.Text) - 1).ToString()
         TimeElapsedLabel.Text = (Integer.Parse(TimeElapsedLabel.Text) + 1).ToString()

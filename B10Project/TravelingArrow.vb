@@ -1,5 +1,6 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock
 
+'Custom control to create traveling arrow for Locations in Main Control screen 
 Public Class TravelingArrow
     Public Sub New()
         InitializeComponent()
@@ -9,6 +10,8 @@ Public Class TravelingArrow
         InitializeComponent()
         TimeLabel.Text = setTime.ToString()
     End Sub
+
+    'Loads the arrow image for the control
     Private Sub TravelingArrow_Load(sender As Object, e As EventArgs) Handles Me.Load
         Try
             Dim imgPath As String = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "Resources\", "arrow.png")

@@ -5,6 +5,8 @@ Public Class DropDownMenu
     Public continentsBtnToggle As Boolean = False
 
     Public Event ComboBoxIndexChanged(sender As Object, e As EventArgs)
+
+    'Makes background color transparent on load
     Private Sub DropDownMenu_Load(sender As Object, e As EventArgs) Handles Me.Load
         FilterOptionsUpdate()
         Me.SetStyle(ControlStyles.SupportsTransparentBackColor, True)
@@ -13,18 +15,19 @@ Public Class DropDownMenu
 
     End Sub
 
+    'Shows the drop down when filter button is clicked
     Private Sub filterBtn_Click(sender As Object, e As EventArgs) Handles filterBtn.Click
         filterBtnToggle = Not filterBtnToggle
         FilterOptionsUpdate()
 
     End Sub
-
+    'Shows the drop down when Continents button is clicked
     Private Sub ContinentsBtn_Click(sender As Object, e As EventArgs) Handles ContinentsBtn.Click
         continentsBtnToggle = Not continentsBtnToggle
         FilterOptionsUpdate()
     End Sub
 
-
+    'Updates size and display based on what filter options are currently showing
     Public Sub FilterOptionsUpdate()
         If filterBtnToggle Then
             Me.Size = New Size(123, 110)
@@ -54,6 +57,7 @@ Public Class DropDownMenu
 
     End Sub
 
+    'Returns the filter options
     Public Function GetFilterOptions()
         Dim options As List(Of String) = New List(Of String)
         For Each item As Object In OptionsListBox.CheckedItems
@@ -70,36 +74,12 @@ Public Class DropDownMenu
 
     End Function
 
-    'Unsued 
-    Private Sub ListBox_DrawItem(sender As Object, e As DrawItemEventArgs)
-        Dim selectionBoxes = DirectCast(sender, ListBox)
-
-        If e.Index < 0 Then Return
-
-        Dim itemText As String = selectionBoxes.Items(e.Index).ToString()
-        e.DrawBackground()
-
-        Dim textBrush As Brush = Brushes.Black
-        Dim textFromat As New StringFormat() With {
-            .Alignment = StringAlignment.Near,
-            .LineAlignment = StringAlignment.Center
-        }
-
-        e.Graphics.DrawString(itemText, e.Font, textBrush, e.Bounds, textFromat)
-
-        If (e.State And DrawItemState.Focus) = DrawItemState.Focus Then
-            Dim focusRect As New Rectangle(e.Bounds.Right - 20, e.Bounds.Top + 2, 16, e.Bounds.Height - 4)
-            ControlPaint.DrawFocusRectangle(e.Graphics, focusRect)
-        End If
-
-        e.DrawFocusRectangle()
-
-    End Sub
-
+    ' Does nothing to create a transparent background
     Protected Overrides Sub OnPaintBackground(e As PaintEventArgs)
-        ' Do nothing to create a transparent background
+
     End Sub
 
+    'Updates the selection after item is checked
     Private Sub OptionsListBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles OptionsListBox.ItemCheck, ContinentsListBox.ItemCheck
         Me.BeginInvoke(Sub()
                            RaiseEvent ComboBoxIndexChanged(sender, e)

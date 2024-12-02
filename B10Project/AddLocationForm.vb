@@ -3,9 +3,9 @@
     Private nextXCoor As Integer = 0
     Private nextYCoor As Integer = 0
 
-    Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
-        AddToLocationPanel()
 
+    'Goes back to the MainControl form when back button is clicked
+    Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
         Form1.SwitchForms()
         searchBar.Text = ""
         FilterMenu.filterBtnToggle = False
@@ -14,6 +14,7 @@
 
     End Sub
 
+    'Replaces placeholder controls and adds event handlers to the filtering controls
     Private Sub AddLocationForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim searchBarControl As New SearchBar()
         searchBarControl.Location = SearchTextBoxPlaceholder.Location
@@ -58,6 +59,7 @@
 
     End Sub
 
+    'Changes the displayed cards based on filtering 
     Private Function filterContentCards(cardData As Dictionary(Of String, String))
         Dim results As List(Of List(Of String)) = FilterMenu.GetFilterOptions()
         Dim options As List(Of String) = results(0)
@@ -90,11 +92,12 @@
         Return optionsIsTrue And continentsIsTrue And searchIsTrue
     End Function
 
+    'Runs when search bar text or filter dropdown options are changed
     Private Sub FilterSelectionsChanged(sender As Object, e As EventArgs)
         AddToLocationPanel()
     End Sub
 
-    'Returns the list of all the data for the content cards
+    'Returns the list of all the data for the content cards. Uses dummy data
     Private Function GetContentCardsData()
         Dim items As New List(Of Dictionary(Of String, String)) From {
             New Dictionary(Of String, String) From {
@@ -180,6 +183,7 @@
 
     End Function
 
+    'Adds preset locations to the Trip when button is clicked 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles AddPresetBtn.Click
         Form1.MainControl1.AddNewLocation(GetContentCardsData()(0), "10", "70")
         Form1.MainControl1.AddNewLocation(GetContentCardsData()(2), "10", "60")

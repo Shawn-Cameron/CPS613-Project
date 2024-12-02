@@ -2,6 +2,7 @@
     Private origColor As Color = Me.BackColor
     Public myData As Dictionary(Of String, String)
 
+    'Create a content card for the AddLocation page
     Public Sub New(data As Dictionary(Of String, String))
         InitializeComponent()
 
@@ -25,19 +26,19 @@
         myData = data
     End Sub
 
+    'Changes background when mouse enters the card
     Private Sub LocationContentCard_MouseEnter(sender As Object, e As EventArgs) Handles Me.MouseEnter
         Me.BackColor = Color.LightGray
     End Sub
 
+    'Changes background when mouse leaves the card
     Private Sub LocationContentCard_MouseLeave(sender As Object, e As EventArgs) Handles Me.MouseLeave
         Me.BackColor = origColor
 
     End Sub
 
+    'Opens location page when card is clicked
     Private Sub LocationContentCard_Click(sender As Object, e As EventArgs) Handles Me.Click
-        'Dim rnd As New Random()
-        'Dim values() As Integer = {10, 20, 30, 40}
-        'Dim associatedLocationPage As New LocationPage(Me, values(rnd.Next(0, values.Length)))
         Dim associatedLocationPage As New LocationPage(Me, 10)
         associatedLocationPage.Show()
     End Sub

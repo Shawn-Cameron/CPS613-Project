@@ -8,7 +8,7 @@ Public Class LocationPage
     Private currentTime As Integer
     Private _timeToReach As Integer
 
-
+    'Opens a new page when a content card is clicked on add location page
     Public Sub New(cardData As LocationContentCard, timeToReach As Integer)
         InitializeComponent()
         _cardData = cardData
@@ -25,6 +25,7 @@ Public Class LocationPage
         RoundButton1_Click(Nothing, EventArgs.Empty)
     End Sub
 
+    'Changes the displayed image to the one before it in the list
     Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
         If imagePaths.Count > 0 Then
             currentIndex -= 1
@@ -35,6 +36,7 @@ Public Class LocationPage
         showImgOrVid()
     End Sub
 
+    'Changes the displayed image to the one after it in the list
     Private Sub RoundButton2_Click(sender As Object, e As EventArgs) Handles RoundButton2.Click
         If imagePaths.Count > 0 Then
             currentIndex += 1
@@ -45,6 +47,7 @@ Public Class LocationPage
         showImgOrVid()
     End Sub
 
+    'Displays images or video based on the currently displayed file
     Private Sub showImgOrVid()
         If imagePaths(currentIndex).EndsWith(".mp4", StringComparison.OrdinalIgnoreCase) Then
             MediaPlayer.Visible = True
@@ -70,6 +73,7 @@ Public Class LocationPage
 
     End Sub
 
+    'Hides video controls on load
     Private Sub LocationPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MediaPlayer.Visible = False
         MediaPlayer.uiMode = "None"
@@ -82,6 +86,7 @@ Public Class LocationPage
     End Sub
 
 
+    'Reduces the amount of stay time at the location
     Private Sub RmTimeBtn_Click(sender As Object, e As EventArgs) Handles RmTimeBtn.Click
         If currentTime > 30 Then
             currentTime -= 10
@@ -89,6 +94,7 @@ Public Class LocationPage
         timeLabel.Text = currentTime.ToString()
     End Sub
 
+    'Increases the amount of stay time at the location
     Private Sub AddTimeBtn_Click(sender As Object, e As EventArgs) Handles AddTimeBtn.Click
         If currentTime < 120 Then
             currentTime += 10
@@ -97,10 +103,12 @@ Public Class LocationPage
 
     End Sub
 
+    'Closes form when back button is clicked
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
         Me.Close()
     End Sub
 
+    'Add the location to the Main Control
     Private Sub AddLocBtn_Click(sender As Object, e As EventArgs) Handles AddLocBtn.Click
         Form1.MainControl1.Button1.Enabled = True
         Form1.MainControl1.AddNewLocation(_cardData.myData, _timeToReach, currentTime)
@@ -108,6 +116,7 @@ Public Class LocationPage
         Me.Close()
     End Sub
 
+    'Pauses/Continues the video when button is clicked
     Private Sub PlayPauseBtn_Click(sender As Object, e As EventArgs) Handles PlayPauseBtn.Click
         If MediaPlayer.playState = WMPLib.WMPPlayState.wmppsPlaying Then
             MediaPlayer.Ctlcontrols.pause()
@@ -118,6 +127,7 @@ Public Class LocationPage
         End If
     End Sub
 
+    'Rewinds the video by 5 seconds
     Private Sub RewindBtn_Click(sender As Object, e As EventArgs) Handles RewindBtn.Click
         If MediaPlayer.Ctlcontrols.currentPosition > 5 Then
             MediaPlayer.Ctlcontrols.currentPosition -= 5
@@ -126,6 +136,7 @@ Public Class LocationPage
         End If
     End Sub
 
+    'Fast forwards the button by 5 seconds
     Private Sub FastFwrdBtn_Click(sender As Object, e As EventArgs) Handles FastFwrdBtn.Click
         If MediaPlayer.Ctlcontrols.currentPosition + 5 < MediaPlayer.currentMedia.duration Then
             MediaPlayer.Ctlcontrols.currentPosition += 5
@@ -134,10 +145,12 @@ Public Class LocationPage
         End If
     End Sub
 
+    'Restarts the video
     Private Sub RestartBtn_Click(sender As Object, e As EventArgs) Handles RestartBtn.Click
         MediaPlayer.Ctlcontrols.currentPosition = 0
     End Sub
 
+    'Changes the play speed based on the previous speed. Must click button multiple times
     Private Sub PlaySpeedBtn_Click(sender As Object, e As EventArgs) Handles PlaySpeedBtn.Click
         If MediaPlayer.settings.rate > 1 Then
             MediaPlayer.settings.rate = 0.5

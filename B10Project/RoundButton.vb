@@ -1,6 +1,7 @@
 ﻿Imports System.Windows.Forms
 Imports System.Drawing.Drawing2D
 
+'Custom control to create a round button
 Public Class RoundButton
     Inherits Button
     Public Sub New()

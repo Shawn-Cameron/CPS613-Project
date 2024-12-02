@@ -1,5 +1,6 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
+'Custom Control to create messages in the Message Control 
 Public Class UserMsgControl
     Public Sub New(sender As String, message As String)
         InitializeComponent()

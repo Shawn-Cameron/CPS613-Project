@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing.Design
 
+'Custom Control for search bar on Add Location Page
 Public Class SearchBar
     Inherits TextBox
 
@@ -28,12 +29,5 @@ Public Class SearchBar
             Me.ForeColor = Color.Gray
         End If
     End Sub
-
-    Protected Overrides Sub OnPaint(ByVal e As System.Windows.Forms.PaintEventArgs)
-        MyBase.OnPaint(e)
-
-        'Add your custom paint code here
-    End Sub
-
 
 End Class
