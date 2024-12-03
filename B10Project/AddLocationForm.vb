@@ -131,18 +131,18 @@
                 {"ratings", "2.0"},
                 {"continent", "Europe"},
                 {"Loc Description", "Description: The First Olympic Games, held in 776 BCE in Olympia, Greece, marked the beginning of one of humanity's longest-standing traditions. Originally conceived as a religious festival to honor Zeus, the king of the Greek gods, the games were held every four years in a sacred grove. Athletes from city-states across ancient Greece competed in events that tested physical prowess and endurance, including foot races, wrestling, chariot racing, and discus throwing."},
-                {"images", "Olympic1.jpg Olympic2.jpg"}
+                {"images", "FOG.mp4 Olympic1.jpg Olympic2.jpg"}
             },
             New Dictionary(Of String, String) From {
                 {"title", "The Construction of the Great Pyramids of Giza"},
                 {"file", "pyramids.jpg"},
                 {"description", "The marvel of ancient engineering and human ingenuity"},
                 {"location", "Olympia, Greece"},
-                {"year", "-776"},
+                {"year", "-2600"},
                 {"ratings", "4.9"},
                 {"continent", "Europe"},
                 {"Loc Description", "Description: Witnessing the construction of the Great Pyramid of Giza, a marvel of ancient engineering and human ingenuity, would be a breathtaking experience. Built as a tomb for Pharaoh Khufu, this towering structure—standing at an original height of 146.6 meters—was constructed using massive limestone and granite blocks, some weighing up to 80 tons. Time travelers could observe the intricate logistics of transporting these stones from quarries using sledges and ramps, the labor force of skilled workers and conscripts, and the cultural and religious significance of this enduring monument. The site, bustling with activity, would reveal the advanced techniques and sheer determination that defined ancient Egypt's golden age."},
-                {"images", "pyramids.jpg"}
+                {"images", "CotGPoG.mp4 pyramids.jpg"}
             },
             New Dictionary(Of String, String) From {
                 {"title", "Rewilded Amazon Biosphere"},
@@ -153,7 +153,7 @@
                 {"ratings", "4.4"},
                 {"continent", "South America"},
                 {"Loc Description", "Description: The Rewilded Amazon Biosphere is a visionary ecological restoration project set in the heart of the Amazon rainforest. This vast biodome initiative combines cutting-edge technology with environmental science to restore and preserve one of Earth's most vital ecosystems. The biosphere encompasses expansive protected zones where extinct and endangered species have been reintroduced through advanced genetic engineering and habitat rehabilitation."},
-                {"images", "amazon.jpg amazon2.jpg amazon3.jpg"}
+                {"images", "BAB.mp4 amazon.jpg amazon2.jpg amazon3.jpg"}
             },
             New Dictionary(Of String, String) From {
                 {"title", "The Great Nation of Nexia"},
@@ -178,7 +178,6 @@
                 {"images", "timeMuseum.jpg timeMuseum2.jpg"}
             }
         }
-
         Return items
 
     End Function
@@ -193,3 +192,5 @@
         Form1.SwitchForms()
     End Sub
 End Class
+
+
